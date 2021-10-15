@@ -28,17 +28,33 @@ void Widget::on_pushButton_clicked()
 
 void Widget::on_pushButtonAnalyze_clicked()
 {
+    Algorithms a;
+    std::vector <QPoint> vert;
+    int position;
 
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
-    std::vector<QPoint> pol = ui->Canvas->getPolygon();
+    int polygon_count = ui->Canvas->getPolygonsCount();
+
+    std::vector<QPolygon> pol = ui->Canvas->getPolygon();
+
+    for (int i = 0; i < polygon_count; i++)
+    {
+        vert.clear();
+        QPolygon polygonek = pol[i];
+        for (int j = 0; j < polygonek.size(); j++)
+        {
+            vert.push_back(polygonek[j]);
+        }
+        position = a.getPositionWinding(q, vert);
+        if (position == 1)
+            break;
+    }
 
     //Get position
-    Algorithms a;
-    int pos = a.getPositionWinding(q, pol);
 
     //Print results
-    if (pos == 1)
+    if (position == 1)
         ui->label->setText("Inside");
     else
         ui->label->setText("Outside");

@@ -31,8 +31,7 @@ void Draw::paintEvent(QPaintEvent *event)
 
 
     QPolygon polygon;
-    std::vector <QPolygon> polygons;
-    std::vector <QPoint> vertices;
+    //std::vector <QPolygon> polygons;
     QPoint vertice;
     double x,y;
     int id;
@@ -63,22 +62,8 @@ void Draw::paintEvent(QPaintEvent *event)
 
     for (int i = 0; i < polygons.size(); i++)
     {
-
-
-
         painter.drawPolygon(polygons[i]);
     }
-
-
-
-    /* for(unsigned int i = 0; i < polygons.size(); i++)
-    {
-        QPolygon poly_in_polygons = polygons[i];
-        painter.drawPolygon(poly_in_polygons);
-        std::cout << poly_in_polygons.begin() << std::endl;
-    }*/
-    //Draw polygon
-    //painter.drawPolygon(polygons[0]);
 
     //Improvements
     //for( QPoint vertex : vertices)
@@ -121,31 +106,4 @@ void Draw::clear()
     repaint();
 }
 
-/*void loadData()
-{
-    //Create new polygon
-    QPolygon pol;
-    QPolygon polygon;
-    std::vector <QPolygon> polygons;
-    double x,y;
-    int id;
-    std::ifstream file("polygon.txt");
-    if (file.is_open())
-    {
-      while(file >> id >> x >> y)
-      {
-          if (id == 0)
-          {
-              if (polygon.isEmpty() == FALSE)
-              {
-                  polygons.push_back(polygon);
-              }
-              polygon.clear();
-              polygon << QPoint(x, y);}
-          else
-              polygon << QPoint(x,y);
-         polygons.push_back(polygon);
-         std::cout << polygon.begin() << std::endl;
-      }
-    }
-}*/
+
