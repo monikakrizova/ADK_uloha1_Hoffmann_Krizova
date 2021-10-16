@@ -30,7 +30,6 @@ void Widget::on_pushButtonAnalyze_clicked()
 {
     Algorithms a;
     std::vector <QPoint> vert;
-    std::vector <int> position;
     int result;
     int pol_position;
 
@@ -43,18 +42,19 @@ void Widget::on_pushButtonAnalyze_clicked()
     for (int i = 0; i < polygon_count; i++)
     {
         vert.clear();
-        QPolygon polygonek = pol[i];
-        for (int j = 0; j < polygonek.size(); j++)
+        QPolygon polygon1 = pol[i];
+        //Get polygon coordinates from polygons
+        for (int j = 0; j < polygon1.size(); j++)
         {
-            vert.push_back(polygonek[j]);
+            vert.push_back(polygon1[j]);
         }
         result = a.getPositionWinding(q, vert);
-        position.push_back(result);
-        std::cout << result << std::endl;
+        std::cout << result << std::endl;           //jen pro me, aby bylo videt, jak to funguje, pak smazeme
+        //If the result of the function is 1, point is inside the polygon pol[i]
         if (result == 1)
         {
             pol_position = i;
-            std::cout << "polygon id: " << pol_position << std::endl;
+            std::cout << "polygon id: " << pol_position << std::endl; //jen pro me, aby bylo videt, jak to funguje, pak smazeme
             break;}
     }
     //Get position
@@ -71,12 +71,12 @@ void Widget::on_pushButtonAnalyze_clicked()
         ui->label->setText("Point is on the line");
     }
 
-
     ui->Canvas->fillPolygon(pol_position);
     ui->Canvas->getResult(pol_position);
 
 }
 
+//Tady pak pridame otevreni dialogoveho okna pro vyber souboru s polygony
 void Widget::on_pushButton_2_clicked()
 {
 
