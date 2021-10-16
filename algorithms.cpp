@@ -91,37 +91,6 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
 }
 
 
-/*std::string Algorithms::readCSV()
-{
-    QPolygon polygon;
-    std::vector <QPolygon> polygons;
-    double x,y;
-    int id;
-    std::ifstream file("polygon.txt");
-    if (file.is_open())
-    {
-      while(file >> id >> x >> y)
-      {
-          if (id == 0)
-          {
-              if (polygon.isEmpty() == FALSE)
-              {
-                  polygons.push_back(polygon);
-              }
-              polygon.clear();
-              polygon << QPoint(x, y);}
-          else
-              polygon << QPoint(x,y);
-         polygons.push_back(polygon);
-
-      }
-      file.close();
-    }
-
-
-    //std::cout<< polygons << std::endl;
-};*/
-
 
 
 

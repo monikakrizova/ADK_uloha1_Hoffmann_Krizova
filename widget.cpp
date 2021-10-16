@@ -21,10 +21,10 @@ void Widget::on_pushButtonClear_clicked()
     ui->Canvas->clear();
 }
 
-void Widget::on_pushButton_clicked()
+/*void Widget::on_pushButton_clicked()
 {
     ui->Canvas->changeStatus();
-}
+}*/
 
 void Widget::on_pushButtonAnalyze_clicked()
 {

@@ -78,22 +78,8 @@ void Draw::mousePressEvent(QMouseEvent *event)
     int x = event->pos().x();
     int y = event->pos().y();
 
-    //Add new vertex
-    if (add_vertex)
-    {
-        //Create new point
-        QPoint p(x,y);
-
-        //Add point to vector
-        vertices.push_back(p);
-    }
-
-    //Modify coordinates of point Q
-    else
-    {
-        q.setX(x);
-        q.setY(y);
-    }
+    q.setX(x);
+    q.setY(y);
 
     //Repaint screen
     repaint();
