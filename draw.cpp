@@ -60,11 +60,15 @@ void Draw::paintEvent(QPaintEvent *event)
     //    pol.append(vertex);
 
     QBrush brush;
-    brush.setColor(Qt::green);
+    brush.setColor(Qt::magenta);
     brush.setStyle(Qt::CrossPattern);
     QPainterPath path;
-    path.addPolygon(polygons[highlighted_polygon]);
-    painter.fillPath(path, brush);
+    if (highlighted_polygon != -99)
+    {
+        path.addPolygon(polygons[highlighted_polygon]);
+        painter.fillPath(path, brush);
+    }
+
 
     painter.end();
 }

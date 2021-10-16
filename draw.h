@@ -16,7 +16,7 @@ private:
     std::vector<QPolygon> polygons;
     QPoint q;
     bool add_vertex;
-    int highlighted_polygon;
+    int highlighted_polygon=-99;
 
 public:
     explicit Draw(QWidget *parent = nullptr);

@@ -62,7 +62,11 @@ void Widget::on_pushButtonAnalyze_clicked()
     if (result == 1)
         ui->label->setText("Inside");
     else
+    {
         ui->label->setText("Outside");
+        pol_position = -99;
+    }
+
 
     ui->Canvas->fillPolygon(pol_position);
     ui->Canvas->getResult(pol_position);
