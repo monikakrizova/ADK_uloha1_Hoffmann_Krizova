@@ -18,17 +18,8 @@ void Draw::paintEvent(QPaintEvent *event)
     QPainter painter(this);
     painter.begin(this);
 
-
-
-    /* //Convert vector to polygon
-    for (int i = 0; i < vertices.size(); i++){
-        pol.append(vertices[i]);
-    }*/
-
     //Draw point q
     painter.drawEllipse(q.x()-4, q.y()-4, 8, 8);
-
-
 
     QPolygon polygon;
     //std::vector <QPolygon> polygons;
@@ -55,12 +46,11 @@ void Draw::paintEvent(QPaintEvent *event)
             vertice.setY(y);
             polygon.append(vertice);
         }
-
     }
     polygons.push_back(polygon);
 
 
-    for (int i = 0; i < polygons.size(); i++)
+    for (unsigned int i = 0; i < polygons.size(); i++)
     {
         painter.drawPolygon(polygons[i]);
     }
@@ -68,6 +58,13 @@ void Draw::paintEvent(QPaintEvent *event)
     //Improvements
     //for( QPoint vertex : vertices)
     //    pol.append(vertex);
+
+    QBrush brush;
+    brush.setColor(Qt::green);
+    brush.setStyle(Qt::CrossPattern);
+    QPainterPath path;
+    path.addPolygon(polygons[highlighted_polygon]);
+    painter.fillPath(path, brush);
 
     painter.end();
 }
@@ -92,4 +89,8 @@ void Draw::clear()
     repaint();
 }
 
-
+void Draw::fillPolygon(int resultik)
+{
+    this->highlighted_polygon = resultik;
+    repaint();
+}

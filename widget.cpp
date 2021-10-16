@@ -30,7 +30,9 @@ void Widget::on_pushButtonAnalyze_clicked()
 {
     Algorithms a;
     std::vector <QPoint> vert;
-    int position;
+    std::vector <int> position;
+    int result;
+    int pol_position;
 
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
@@ -46,18 +48,25 @@ void Widget::on_pushButtonAnalyze_clicked()
         {
             vert.push_back(polygonek[j]);
         }
-        position = a.getPositionWinding(q, vert);
-        if (position == 1)
-            break;
+        result = a.getPositionWinding(q, vert);
+        position.push_back(result);
+        std::cout << result << std::endl;
+        if (result == 1)
+        {
+            pol_position = i;
+            std::cout << "polygon id: " << pol_position << std::endl;
+            break;}
     }
-
     //Get position
-
     //Print results
-    if (position == 1)
+    if (result == 1)
         ui->label->setText("Inside");
     else
         ui->label->setText("Outside");
+
+    ui->Canvas->fillPolygon(pol_position);
+    ui->Canvas->getResult(pol_position);
+
 }
 
 void Widget::on_pushButton_2_clicked()
