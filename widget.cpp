@@ -21,27 +21,56 @@ void Widget::on_pushButtonClear_clicked()
     ui->Canvas->clear();
 }
 
-void Widget::on_pushButton_clicked()
+/*void Widget::on_pushButton_clicked()
 {
     ui->Canvas->changeStatus();
-}
+}*/
 
 void Widget::on_pushButtonAnalyze_clicked()
 {
+    Algorithms a;
+    std::vector <QPoint> vert;
+    std::vector <int> position;
+    int result;
+    int pol_position;
 
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
-    std::vector<QPoint> pol = ui->Canvas->getPolygon();
+    int polygon_count = ui->Canvas->getPolygonsCount();
 
+    std::vector<QPolygon> pol = ui->Canvas->getPolygon();
+
+    for (int i = 0; i < polygon_count; i++)
+    {
+        vert.clear();
+        QPolygon polygonek = pol[i];
+        for (int j = 0; j < polygonek.size(); j++)
+        {
+            vert.push_back(polygonek[j]);
+        }
+        result = a.getPositionWinding(q, vert);
+        position.push_back(result);
+        std::cout << result << std::endl;
+        if (result == 1)
+        {
+            pol_position = i;
+            std::cout << "polygon id: " << pol_position << std::endl;
+            break;}
+    }
     //Get position
-    Algorithms a;
-    int pos = a.getPositionWinding(q, pol);
-
     //Print results
-    if (pos == 1)
+    if (result == 1)
         ui->label->setText("Inside");
     else
+    {
         ui->label->setText("Outside");
+        pol_position = -99;
+    }
+
+
+    ui->Canvas->fillPolygon(pol_position);
+    ui->Canvas->getResult(pol_position);
+
 }
 
 void Widget::on_pushButton_2_clicked()

@@ -18,21 +18,11 @@ void Draw::paintEvent(QPaintEvent *event)
     QPainter painter(this);
     painter.begin(this);
 
-
-
-    /* //Convert vector to polygon
-    for (int i = 0; i < vertices.size(); i++){
-        pol.append(vertices[i]);
-    }*/
-
     //Draw point q
     painter.drawEllipse(q.x()-4, q.y()-4, 8, 8);
 
-
-
     QPolygon polygon;
-    std::vector <QPolygon> polygons;
-    std::vector <QPoint> vertices;
+    //std::vector <QPolygon> polygons;
     QPoint vertice;
     double x,y;
     int id;
@@ -56,33 +46,29 @@ void Draw::paintEvent(QPaintEvent *event)
             vertice.setY(y);
             polygon.append(vertice);
         }
-
     }
     polygons.push_back(polygon);
 
 
-    for (int i = 0; i < polygons.size(); i++)
+    for (unsigned int i = 0; i < polygons.size(); i++)
     {
-
-
-
         painter.drawPolygon(polygons[i]);
     }
-
-
-
-    /* for(unsigned int i = 0; i < polygons.size(); i++)
-    {
-        QPolygon poly_in_polygons = polygons[i];
-        painter.drawPolygon(poly_in_polygons);
-        std::cout << poly_in_polygons.begin() << std::endl;
-    }*/
-    //Draw polygon
-    //painter.drawPolygon(polygons[0]);
 
     //Improvements
     //for( QPoint vertex : vertices)
     //    pol.append(vertex);
+
+    QBrush brush;
+    brush.setColor(Qt::magenta);
+    brush.setStyle(Qt::CrossPattern);
+    QPainterPath path;
+    if (highlighted_polygon != -99)
+    {
+        path.addPolygon(polygons[highlighted_polygon]);
+        painter.fillPath(path, brush);
+    }
+
 
     painter.end();
 }
@@ -93,22 +79,8 @@ void Draw::mousePressEvent(QMouseEvent *event)
     int x = event->pos().x();
     int y = event->pos().y();
 
-    //Add new vertex
-    if (add_vertex)
-    {
-        //Create new point
-        QPoint p(x,y);
-
-        //Add point to vector
-        vertices.push_back(p);
-    }
-
-    //Modify coordinates of point Q
-    else
-    {
-        q.setX(x);
-        q.setY(y);
-    }
+    q.setX(x);
+    q.setY(y);
 
     //Repaint screen
     repaint();
@@ -121,31 +93,8 @@ void Draw::clear()
     repaint();
 }
 
-/*void loadData()
+void Draw::fillPolygon(int resultik)
 {
-    //Create new polygon
-    QPolygon pol;
-    QPolygon polygon;
-    std::vector <QPolygon> polygons;
-    double x,y;
-    int id;
-    std::ifstream file("polygon.txt");
-    if (file.is_open())
-    {
-      while(file >> id >> x >> y)
-      {
-          if (id == 0)
-          {
-              if (polygon.isEmpty() == FALSE)
-              {
-                  polygons.push_back(polygon);
-              }
-              polygon.clear();
-              polygon << QPoint(x, y);}
-          else
-              polygon << QPoint(x,y);
-         polygons.push_back(polygon);
-         std::cout << polygon.begin() << std::endl;
-      }
-    }
-}*/
+    this->highlighted_polygon = resultik;
+    repaint();
+}

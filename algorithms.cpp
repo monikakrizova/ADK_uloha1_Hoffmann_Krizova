@@ -64,6 +64,7 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
     //Analyze position of point and polygon
     int n = pol.size();
     double omega_sum=0;
+    double eps = 1.0e-5;
 
     //Process all segments of polygon
     for (int i = 0; i<n; i++)
@@ -82,7 +83,6 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
     }
 
     //Point inside polygon
-    double eps = 1.0e-5;
     if (fabs(fabs(omega_sum) - 2*M_PI) < eps)
         return 1;
 
@@ -90,37 +90,6 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
     return 0;
 }
 
-
-std::string Algorithms::readCSV()
-{
-    QPolygon polygon;
-    std::vector <QPolygon> polygons;
-    double x,y;
-    int id;
-    std::ifstream file("polygon.txt");
-    if (file.is_open())
-    {
-      while(file >> id >> x >> y)
-      {
-          if (id == 0)
-          {
-              if (polygon.isEmpty() == FALSE)
-              {
-                  polygons.push_back(polygon);
-              }
-              polygon.clear();
-              polygon << QPoint(x, y);}
-          else
-              polygon << QPoint(x,y);
-         polygons.push_back(polygon);
-
-      }
-      file.close();
-    }
-
-
-    //std::cout<< polygons << std::endl;
-};
 
 
 
