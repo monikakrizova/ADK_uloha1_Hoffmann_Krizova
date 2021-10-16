@@ -32,11 +32,10 @@ void Widget::on_pushButtonAnalyze_clicked()
     std::vector <QPoint> vert;
     int result;
     int pol_position;
-
+    int res;
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
     int polygon_count = ui->Canvas->getPolygonsCount();
-
     std::vector<QPolygon> pol = ui->Canvas->getPolygon();
 
     for (int i = 0; i < polygon_count; i++)
@@ -48,25 +47,32 @@ void Widget::on_pushButtonAnalyze_clicked()
         {
             vert.push_back(polygon1[j]);
         }
-        result = a.getPositionWinding(q, vert);
+
+        if(ui->comboBox->currentIndex())
+            result = a.getPositionRayCrossing(q, vert);
+        else
+            result = a.getPositionWinding(q, vert);
+
         std::cout << result << std::endl;           //jen pro me, aby bylo videt, jak to funguje, pak smazeme
         //If the result of the function is 1, point is inside the polygon pol[i]
         if (result == 1)
         {
+            res = 1;
             pol_position = i;
             std::cout << "polygon id: " << pol_position << std::endl; //jen pro me, aby bylo videt, jak to funguje, pak smazeme
-            break;}
+            //break;
+        }
     }
     //Get position
     //Print results
-    if (result == 1)
+    if (res == 1)
         ui->label->setText("Inside");
-    else if (result == 0)
+    else if (res == 0)
     {
         ui->label->setText("Outside");
         pol_position = -99;
     }
-    else if (result == -1)
+    else if (res == -1)
     {
         ui->label->setText("Point is on the line");
     }
