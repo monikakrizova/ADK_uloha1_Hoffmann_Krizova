@@ -23,7 +23,6 @@ void Draw::paintEvent(QPaintEvent *event)
     //Draw point q
     painter.drawEllipse(q.x()-4, q.y()-4, 8, 8);
 
-    }
     //Save to the vector of QPolygons
     //Draw polygons
     for (unsigned int i = 0; i < polygons.size(); i++)
