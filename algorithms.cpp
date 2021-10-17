@@ -103,8 +103,19 @@ int Algorithms::getPositionRayCrossing(QPoint &q, std::vector<QPoint> &pol)
     {
         double dxx = pol[i%n].x()-q.x();
         double dyy = pol[i%n].y()-q.y();
-        //double dx = pol[i%n-1].x()-q.x();
-        //double dy = pol[i%n-1].y()-q.y();
+
+        //get distance between [xi, yi] [xii, yii]
+        double dist_i_ii = sqrt((dx - dxx)*(dx - dxx) + (dy - dyy)*(dy - dyy));
+
+        //get the addition of distance between [xi, yi] and q, and [xiir, yiir] and q
+        double dist_q = sqrt((dx*dx + dy*dy)) + sqrt((dxx*dxx + dyy*dyy));
+
+        //check whether point is on boundary
+        if(fabs(dist_i_ii-dist_q) < eps)
+        {
+            return -1;
+        }
+
         if (((dyy > 0) && (dy <= 0)) || ((dy > 0) && (dyy <= 0)))
         {
             double xm = (dxx*dy-dx*dyy)/(dyy-dy);

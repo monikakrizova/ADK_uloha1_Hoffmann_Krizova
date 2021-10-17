@@ -26,9 +26,9 @@ public:
     void changeStatus(){add_vertex = !add_vertex;}
     QPoint getPoint(){return q;}
     std::vector<QPolygon> getPolygon(){return polygons;}
-    int getPolygonsCount(){return polygons.size();}
     void fillPolygon(int result);
     void getResult(int result){highlighted_polygon = result;}
+    void loadPolygons();
 
     void loadData();
 signals:

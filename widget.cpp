@@ -35,10 +35,10 @@ void Widget::on_pushButtonAnalyze_clicked()
     int res;
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
-    int polygon_count = ui->Canvas->getPolygonsCount();
+    //int polygon_count = ui->Canvas->getPolygonsCount();
     std::vector<QPolygon> pol = ui->Canvas->getPolygon();
 
-    for (int i = 0; i < polygon_count; i++)
+    for (int i = 0; i < pol.size(); i++)
     {
         vert.clear();
         QPolygon polygon1 = pol[i];
@@ -85,6 +85,7 @@ void Widget::on_pushButtonAnalyze_clicked()
 //Tady pak pridame otevreni dialogoveho okna pro vyber souboru s polygony
 void Widget::on_pushButton_2_clicked()
 {
-
+    ui->Canvas->loadPolygons();
+    repaint();
 }
 
