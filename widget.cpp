@@ -84,7 +84,7 @@ void Widget::on_pushButtonLoad_clicked()
 {
     QString file_name = QFileDialog::getOpenFileName(this, tr("Open Text file"), "", tr("Text Files (*.txt)"));
     QFileInfo fileinfo(file_name);
-    QString file_path = fileinfo.absoluteFilePath();
-    ui->Canvas->loadData(file_path);
+    //QString file_path = fileinfo.absoluteFilePath();
+    ui->Canvas->loadData(file_name);
 }
 

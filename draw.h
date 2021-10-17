@@ -30,7 +30,7 @@ public:
     void fillPolygon(int result);
     void getResult(int result){highlighted_polygon = result;} //nema bejt setResult? gettery musi neco vracet :D a k cemu to vlastne je?
 
-    void loadData(QString &path);
+    void loadData(QString &file_name);
 signals:
 
 public slots:
