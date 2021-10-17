@@ -2,6 +2,7 @@
 #include "ui_widget.h"
 #include "algorithms.h"
 #include <iostream>
+#include <QFileDialog>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -36,6 +37,8 @@ void Widget::on_pushButtonAnalyze_clicked()
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
     int polygon_count = ui->Canvas->getPolygonsCount();
+
+    //std::cout << "pol_count = " << polygon_count << std::endl;
 
     std::vector<QPolygon> pol = ui->Canvas->getPolygon();
 
@@ -72,13 +75,16 @@ void Widget::on_pushButtonAnalyze_clicked()
     }
 
     ui->Canvas->fillPolygon(pol_position);
-    ui->Canvas->getResult(pol_position);
+    //ui->Canvas->getResult(pol_position); //tam nemusi byt
 
 }
 
 //Tady pak pridame otevreni dialogoveho okna pro vyber souboru s polygony
-void Widget::on_pushButton_2_clicked()
+void Widget::on_pushButtonLoad_clicked()
 {
-
+    QString file_name = QFileDialog::getOpenFileName(this, tr("Open Text file"), "", tr("Text Files (*.txt)"));
+    QFileInfo fileinfo(file_name);
+    QString file_path = fileinfo.absoluteFilePath();
+    ui->Canvas->loadData(file_path);
 }
 

@@ -23,40 +23,48 @@ void Draw::paintEvent(QPaintEvent *event)
     //Draw point q
     painter.drawEllipse(q.x()-4, q.y()-4, 8, 8);
 
-    QPolygon polygon;
-    //std::vector <QPolygon> polygons;
-    QPoint vertice;
-    double x,y;
-    int id;
-
-    //Load polygons from the txt file
-    std::ifstream file("C:/Users/monik/Documents/SKOLA/Ing_3.semestr/ADK/PointInPolygon/polygon.txt");
-    while (file >> id >> x >> y)
-    {
-        if (id == 1)
-        {
-            if (polygon.empty() == false)
-                polygons.push_back(polygon);
-            polygon.clear();
-            vertice.setX(x);
-            vertice.setY(y);
-            polygon.append(vertice);
-        }
-        else
-        {
-            vertice.setX(x);
-            vertice.setY(y);
-            polygon.append(vertice);
-        }
     }
     //Save to the vector of QPolygons
-    polygons.push_back(polygon);
-
     //Draw polygons
     for (unsigned int i = 0; i < polygons.size(); i++)
     {
         painter.drawPolygon(polygons[i]);
     }
+
+//    QPolygon polygon;
+//    //std::vector <QPolygon> polygons;
+//    QPoint vertice;
+//    double x,y;
+//    int id;
+
+//    //Load polygons from the txt file
+//    std::ifstream file("D:/Github/ADK/ADKI_uloha1/polygon.txt");
+//    while (file >> id >> x >> y)
+//    {
+//        if (id == 1)
+//        {
+//            if (polygon.empty() == false)
+//                polygons.push_back(polygon);
+//            polygon.clear();
+//            vertice.setX(x);
+//            vertice.setY(y);
+//            polygon.append(vertice);
+//        }
+//        else
+//        {
+//            vertice.setX(x);
+//            vertice.setY(y);
+//            polygon.append(vertice);
+//        }
+//    }
+//    //Save to the vector of QPolygons
+//    polygons.push_back(polygon);
+
+//    //Draw polygons
+//    for (unsigned int i = 0; i < polygons.size(); i++)
+//    {
+//        painter.drawPolygon(polygons[i]);
+//    }
 
     //Draw polygon which contains the point
 
@@ -75,6 +83,7 @@ void Draw::paintEvent(QPaintEvent *event)
         painter.drawPolygon(polygons[highlighted_polygon]);
         painter.fillPath(path, brush);
     }
+
 
     painter.end();
 }
@@ -104,4 +113,40 @@ void Draw::fillPolygon(int result1)
 {
     this->highlighted_polygon = result1;
     repaint();
+}
+
+void Draw::loadData(QString &path)
+{
+
+    std::string file_path = path.toStdString();
+    std::cout << "file path:" << file_path << std::endl;
+
+    QPolygon polygon;
+    //std::vector <QPolygon> polygons;
+    QPoint vertice;
+    double x,y;
+    int id;
+
+    //Load polygons from the txt file
+    std::ifstream file(file_path);
+    while (file >> id >> x >> y)
+    {
+        if (id == 1)
+        {
+            if (polygon.empty() == false)
+                polygons.push_back(polygon);
+            polygon.clear();
+            vertice.setX(x);
+            vertice.setY(y);
+            polygon.append(vertice);
+        }
+        else
+        {
+            vertice.setX(x);
+            vertice.setY(y);
+            polygon.append(vertice);
+        }
+    }
+    //Save to the vector of QPolygons
+    polygons.push_back(polygon);
 }

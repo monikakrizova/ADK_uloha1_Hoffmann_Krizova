@@ -23,14 +23,14 @@ public:
     void paintEvent(QPaintEvent *event);
     void mousePressEvent(QMouseEvent *event);
     void clear();
-    void changeStatus(){add_vertex = !add_vertex;}
+    //void changeStatus(){add_vertex = !add_vertex;} //nepotrebujeme
     QPoint getPoint(){return q;}
     std::vector<QPolygon> getPolygon(){return polygons;}
     int getPolygonsCount(){return polygons.size();}
     void fillPolygon(int result);
-    void getResult(int result){highlighted_polygon = result;}
+    void getResult(int result){highlighted_polygon = result;} //nema bejt setResult? gettery musi neco vracet :D a k cemu to vlastne je?
 
-    void loadData();
+    void loadData(QString &path);
 signals:
 
 public slots:

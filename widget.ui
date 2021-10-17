@@ -27,7 +27,7 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="pushButtonLoad">
        <property name="text">
         <string>Load polygon</string>
        </property>
