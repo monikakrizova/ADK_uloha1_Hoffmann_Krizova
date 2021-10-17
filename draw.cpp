@@ -23,47 +23,11 @@ void Draw::paintEvent(QPaintEvent *event)
     //Draw point q
     painter.drawEllipse(q.x()-4, q.y()-4, 8, 8);
 
-    //Save to the vector of QPolygons
     //Draw polygons
     for (unsigned int i = 0; i < polygons.size(); i++)
     {
         painter.drawPolygon(polygons[i]);
     }
-
-//    QPolygon polygon;
-//    //std::vector <QPolygon> polygons;
-//    QPoint vertice;
-//    double x,y;
-//    int id;
-
-//    //Load polygons from the txt file
-//    std::ifstream file("D:/Github/ADK/ADKI_uloha1/polygon.txt");
-//    while (file >> id >> x >> y)
-//    {
-//        if (id == 1)
-//        {
-//            if (polygon.empty() == false)
-//                polygons.push_back(polygon);
-//            polygon.clear();
-//            vertice.setX(x);
-//            vertice.setY(y);
-//            polygon.append(vertice);
-//        }
-//        else
-//        {
-//            vertice.setX(x);
-//            vertice.setY(y);
-//            polygon.append(vertice);
-//        }
-//    }
-//    //Save to the vector of QPolygons
-//    polygons.push_back(polygon);
-
-//    //Draw polygons
-//    for (unsigned int i = 0; i < polygons.size(); i++)
-//    {
-//        painter.drawPolygon(polygons[i]);
-//    }
 
     //Draw polygon which contains the point
 
@@ -82,7 +46,6 @@ void Draw::paintEvent(QPaintEvent *event)
         painter.drawPolygon(polygons[highlighted_polygon]);
         painter.fillPath(path, brush);
     }
-
 
     painter.end();
 }
@@ -105,6 +68,8 @@ void Draw::clear()
 {
     //Clear and repaint
     polygons.clear();
+    q.setX(-100);
+    q.setY(-100);
     repaint();
 }
 
@@ -114,38 +79,42 @@ void Draw::fillPolygon(int result1)
     repaint();
 }
 
-void Draw::loadData(QString &path)
+void Draw::loadData(QString &file_name)
 {
-
-    std::string file_path = path.toStdString();
-    std::cout << "file path:" << file_path << std::endl;
-
     QPolygon polygon;
-    //std::vector <QPolygon> polygons;
     QPoint vertice;
-    double x,y;
-    int id;
 
-    //Load polygons from the txt file
-    std::ifstream file(file_path);
-    while (file >> id >> x >> y)
-    {
-        if (id == 1)
+    QFile inputFile(file_name);
+        if (inputFile.open(QIODevice::ReadOnly))
         {
-            if (polygon.empty() == false)
-                polygons.push_back(polygon);
-            polygon.clear();
-            vertice.setX(x);
-            vertice.setY(y);
-            polygon.append(vertice);
+            QTextStream in(&inputFile);
+            while (!in.atEnd())
+            {
+                QString line = in.readLine();
+                int id = line.split(" ")[0].toInt();
+                int x = line.split(" ")[1].toDouble();
+                int y = line.split(" ")[2].toDouble();
+
+                if (id == 1)
+                {
+                    if (polygon.empty() == false)
+                        polygons.push_back(polygon);
+                    polygon.clear();
+                    vertice.setX(x);
+                    vertice.setY(y);
+                    polygon.append(vertice);
+                }
+                else
+                {
+                    vertice.setX(x);
+                    vertice.setY(y);
+                    polygon.append(vertice);
+                }
+            }
+
+            //Save to the vector of QPolygons
+            polygons.push_back(polygon);
+
         }
-        else
-        {
-            vertice.setX(x);
-            vertice.setY(y);
-            polygon.append(vertice);
-        }
+        inputFile.close();
     }
-    //Save to the vector of QPolygons
-    polygons.push_back(polygon);
-}

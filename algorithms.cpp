@@ -91,6 +91,47 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
         return -1;
 }
 
+int Algorithms::getPositionRayCrossing(QPoint &q, std::vector<QPoint> &pol)
+{
+    int n = pol.size();
+    double eps = 1.0e-5;
+    int k = 0;
+    double dx = pol[0].x()-q.x();
+    double dy = pol[0].x()-q.y();
+
+    for (int i = 1; i <= n; i++)
+    {
+        double dxx = pol[i%n].x()-q.x();
+        double dyy = pol[i%n].y()-q.y();
+
+        //get distance between [xi, yi] [xii, yii]
+        double dist_i_ii = sqrt((dx - dxx)*(dx - dxx) + (dy - dyy)*(dy - dyy));
+
+        //get the addition of distance between [xi, yi] and q, and [xiir, yiir] and q
+        double dist_q = sqrt((dx*dx + dy*dy)) + sqrt((dxx*dxx + dyy*dyy));
+
+        //check whether point is on boundary
+        if(fabs(dist_i_ii-dist_q) < eps)
+        {
+            return -1;
+        }
+
+        if (((dyy > 0) && (dy <= 0)) || ((dy > 0) && (dyy <= 0)))
+        {
+            double xm = (dxx*dy-dx*dyy)/(dyy-dy);
+            if (xm > 0)
+                k++;
+        }
+        dx = dxx;
+        dy = dyy;
+    }
+    if (k%2 == 0)
+        return 0;
+    else
+        return 1;
+
+}
+
 
 
 

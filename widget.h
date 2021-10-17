@@ -18,8 +18,6 @@ public:
 private slots:
     void on_pushButtonClear_clicked();
 
-    //void on_pushButton_clicked();
-
     void on_pushButtonAnalyze_clicked();
 
     void on_pushButtonLoad_clicked();

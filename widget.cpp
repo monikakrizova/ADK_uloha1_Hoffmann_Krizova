@@ -4,6 +4,7 @@
 #include <iostream>
 #include <QFileDialog>
 
+
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -22,10 +23,6 @@ void Widget::on_pushButtonClear_clicked()
     ui->Canvas->clear();
 }
 
-/*void Widget::on_pushButton_clicked()
-{
-    ui->Canvas->changeStatus();
-}*/
 
 void Widget::on_pushButtonAnalyze_clicked()
 {
@@ -33,16 +30,14 @@ void Widget::on_pushButtonAnalyze_clicked()
     std::vector <QPoint> vert;
     int result;
     int pol_position;
+    int res;
 
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
-    int polygon_count = ui->Canvas->getPolygonsCount();
-
-    //std::cout << "pol_count = " << polygon_count << std::endl;
-
+    //int polygon_count = ui->Canvas->getPolygonsCount();
     std::vector<QPolygon> pol = ui->Canvas->getPolygon();
 
-    for (int i = 0; i < polygon_count; i++)
+    for (int i = 0; i < pol.size(); i++)
     {
         vert.clear();
         QPolygon polygon1 = pol[i];
@@ -51,31 +46,37 @@ void Widget::on_pushButtonAnalyze_clicked()
         {
             vert.push_back(polygon1[j]);
         }
-        result = a.getPositionWinding(q, vert);
+
+        if(ui->comboBox->currentIndex())
+            result = a.getPositionRayCrossing(q, vert);
+        else
+            result = a.getPositionWinding(q, vert);
+
         std::cout << result << std::endl;           //jen pro me, aby bylo videt, jak to funguje, pak smazeme
         //If the result of the function is 1, point is inside the polygon pol[i]
         if (result == 1)
         {
+            res = 1;
             pol_position = i;
             std::cout << "polygon id: " << pol_position << std::endl; //jen pro me, aby bylo videt, jak to funguje, pak smazeme
-            break;}
+            //break;
+        }
     }
     //Get position
     //Print results
-    if (result == 1)
+    if (res == 1)
         ui->label->setText("Inside");
-    else if (result == 0)
+    else if (res == 0)
     {
         ui->label->setText("Outside");
         pol_position = -99;
     }
-    else if (result == -1)
+    else if (res == -1)
     {
         ui->label->setText("Point is on the line");
     }
 
     ui->Canvas->fillPolygon(pol_position);
-    //ui->Canvas->getResult(pol_position); //tam nemusi byt
 
 }
 
@@ -84,7 +85,7 @@ void Widget::on_pushButtonLoad_clicked()
 {
     QString file_name = QFileDialog::getOpenFileName(this, tr("Open Text file"), "", tr("Text Files (*.txt)"));
     QFileInfo fileinfo(file_name);
-    QString file_path = fileinfo.absoluteFilePath();
-    ui->Canvas->loadData(file_path);
+    //QString file_path = fileinfo.absoluteFilePath();
+    ui->Canvas->loadData(file_name);
 }
 
