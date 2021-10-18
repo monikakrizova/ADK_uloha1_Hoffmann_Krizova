@@ -20,6 +20,7 @@ Widget::~Widget()
 
 void Widget::on_pushButtonClear_clicked()
 {
+    //Clear canvas
     ui->Canvas->clear();
 }
 
@@ -34,32 +35,33 @@ void Widget::on_pushButtonAnalyze_clicked()
 
     //Analyze position of the point and vertex
     QPoint q = ui->Canvas->getPoint();
-    //int polygon_count = ui->Canvas->getPolygonsCount();
-    std::vector<QPolygon> pol = ui->Canvas->getPolygon();
-    std::cout << "widget pocet polygonu " << pol.size() << std::endl;
 
-    for (int i = 0; i < pol.size(); i++)
+    std::vector<QPolygon> pol = ui->Canvas->getPolygon();
+
+    for (unsigned int i = 0; i < pol.size(); i++)
     {
+        //Clear the vector of vertices
         vert.clear();
+
+        //Save one polygon from the vector to the separate value
         QPolygon polygon1 = pol[i];
+
         //Get polygon coordinates from polygons
         for (int j = 0; j < polygon1.size(); j++)
         {
             vert.push_back(polygon1[j]);
         }
 
+        //Analyze point position
         if(ui->comboBox->currentIndex())
             result = a.getPositionRayCrossing(q, vert);
         else
             result = a.getPositionWinding(q, vert);
 
-        std::cout << result << std::endl;           //jen pro me, aby bylo videt, jak to funguje, pak smazeme
         //If the result of the function is 1, point is inside the polygon pol[i]
         if (result == 1)
         {
-            result = 1;
             pol_position = i;
-            std::cout << "polygon id: " << pol_position << std::endl; //jen pro me, aby bylo videt, jak to funguje, pak smazeme
             break;
         }
     }
@@ -77,16 +79,16 @@ void Widget::on_pushButtonAnalyze_clicked()
         ui->label->setText("Point is on the line");
     }
 
+    //Fill polygon including point
     ui->Canvas->fillPolygon(pol_position);
 
 }
 
-//Tady pak pridame otevreni dialogoveho okna pro vyber souboru s polygony
 void Widget::on_pushButtonLoad_clicked()
 {
+    //Load polygon from the file
     QString file_name = QFileDialog::getOpenFileName(this, tr("Open Text file"), "", tr("Text Files (*.txt)"));
     QFileInfo fileinfo(file_name);
-    //QString file_path = fileinfo.absoluteFilePath();
     ui->Canvas->loadData(file_name);
 }
 

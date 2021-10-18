@@ -95,8 +95,11 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
 
 int Algorithms::getPositionRayCrossing(QPoint &q, std::vector<QPoint> &pol)
 {
+    //Analyze position of point and polygon
     int n = pol.size();
     int k = 0;
+
+    //Setting first vertex
     double dx = pol[0].x()-q.x();
     double dy = pol[0].y()-q.y();
 
@@ -114,6 +117,7 @@ int Algorithms::getPositionRayCrossing(QPoint &q, std::vector<QPoint> &pol)
         dx = dxx;
         dy = dyy;
     }
+
     if (k%2 == 0)
         return 0;
     else

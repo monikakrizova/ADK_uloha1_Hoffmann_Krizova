@@ -39,7 +39,7 @@ void Draw::paintEvent(QPaintEvent *event)
     QPen fill_pen(Qt::magenta, 3, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin);
     painter.setPen(fill_pen);
 
-    //Paint selected polygon (-99 je jen pomucka aby se nezvyraznovalo nic, pokud je bod mimo nebo jeste nikde neni)
+    //Highlight polygon which includes the point
     if (highlighted_polygon != -99)
     {
         path.addPolygon(polygons[highlighted_polygon]);
@@ -66,7 +66,7 @@ void Draw::mousePressEvent(QMouseEvent *event)
 
 void Draw::clear()
 {
-    //Clear and repaint
+    //Clear and repaint canvas
     polygons.clear();
     q.setX(-100);
     q.setY(-100);
@@ -75,12 +75,14 @@ void Draw::clear()
 
 void Draw::fillPolygon(int result1)
 {
+    //Highlight selected polygon
     this->highlighted_polygon = result1;
     repaint();
 }
 
 void Draw::loadData(QString &file_name)
 {
+    //Load data from the *.txt file
     QPolygon polygon;
     QPoint vertice;
 
@@ -100,21 +102,23 @@ void Draw::loadData(QString &file_name)
                     if (polygon.empty() == false)
                         polygons.push_back(polygon);
                     polygon.clear();
+                    //Add vertice to the end of the QPoint vector
                     vertice.setX(x);
                     vertice.setY(y);
                     polygon.append(vertice);
                 }
                 else
                 {
+                    //Add vertice to the end of the QPoint vector
                     vertice.setX(x);
                     vertice.setY(y);
                     polygon.append(vertice);
                 }
             }
 
-            //Save to the vector of QPolygons
+            //Save polygon to the vector of QPolygons
             polygons.push_back(polygon);
-
         }
+
         inputFile.close();
     }
