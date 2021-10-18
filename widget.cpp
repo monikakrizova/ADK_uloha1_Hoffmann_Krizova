@@ -36,6 +36,7 @@ void Widget::on_pushButtonAnalyze_clicked()
     QPoint q = ui->Canvas->getPoint();
     //int polygon_count = ui->Canvas->getPolygonsCount();
     std::vector<QPolygon> pol = ui->Canvas->getPolygon();
+    std::cout << "widget pocet polygonu " << pol.size() << std::endl;
 
     for (int i = 0; i < pol.size(); i++)
     {
@@ -56,22 +57,22 @@ void Widget::on_pushButtonAnalyze_clicked()
         //If the result of the function is 1, point is inside the polygon pol[i]
         if (result == 1)
         {
-            res = 1;
+            result = 1;
             pol_position = i;
             std::cout << "polygon id: " << pol_position << std::endl; //jen pro me, aby bylo videt, jak to funguje, pak smazeme
-            //break;
+            break;
         }
     }
     //Get position
     //Print results
-    if (res == 1)
+    if (result == 1)
         ui->label->setText("Inside");
-    else if (res == 0)
+    else if (result == 0)
     {
         ui->label->setText("Outside");
         pol_position = -99;
     }
-    else if (res == -1)
+    else if (result == -1)
     {
         ui->label->setText("Point is on the line");
     }
