@@ -99,7 +99,7 @@ int Algorithms::getPositionRayCrossing(QPoint &q, std::vector<QPoint> &pol)
     double dx = pol[0].x()-q.x();
     double dy = pol[0].x()-q.y();
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n+1; i++)
     {
         double dxx = pol[i%n].x()-q.x();
         double dyy = pol[i%n].y()-q.y();
