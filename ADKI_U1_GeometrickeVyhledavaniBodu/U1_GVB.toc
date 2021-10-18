@@ -1,0 +1,11 @@
+\babel@toc {czech}{}
+\contentsline {section}{\numberline {1}Zadání}{2}%
+\contentsline {section}{\numberline {2}Popis a rozbor problému + vzorce.}{3}%
+\contentsline {section}{\numberline {3}Popisy algoritmů formálnímm jazykem.}{4}%
+\contentsline {section}{\numberline {4}Problematické situace a jejich rozbor (tj. simplexy) + ošetření těchto situací v kódu.}{5}%
+\contentsline {section}{\numberline {5}Vstupní data, formát vstupních dat, popis.}{6}%
+\contentsline {section}{\numberline {6}Výstupní data, formát výstupních da, popis.}{7}%
+\contentsline {section}{\numberline {7}Printscreen vytvořené aplikace.}{8}%
+\contentsline {section}{\numberline {8}Dokumentaci: popis tříd, datových položek a jednotlivých metod..}{9}%
+\contentsline {section}{\numberline {9}Závěr, možné či neřešené problémy, náměty na vylepšení.}{10}%
+\contentsline {section}{\numberline {10}Seznam literatury}{11}%
