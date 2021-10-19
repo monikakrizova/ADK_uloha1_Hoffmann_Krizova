@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  19 OCT 2021 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  19 OCT 2021 15:24
 entering extended mode
 **./U1_GVB.tex
 (U1_GVB.tex
@@ -171,11 +171,10 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
  [1] [2
 
 ]
-Overfull \hbox (14.67332pt too wide) in paragraph at lines 136--137
-\T1/ppl/m/n/10.95 nota $\OML/zplm/m/it/10.95 ![]$ \T1/ppl/m/n/10.95 klad-nou ho
-d-notu. Po-kud se bod $\OML/zplm/m/it/10.95 q$ \T1/ppl/m/n/10.95 na-chází vprav
-o od p°ímky $\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 p[]\OT1/ppl/m/n/10.95 , 
-\OML/zplm/m/it/10.95 p[]\OT1/zplm/m/n/10.95 )$\T1/ppl/m/n/10.95 ,
+Overfull \hbox (2.93445pt too wide) in paragraph at lines 136--137
+\T1/ppl/m/n/10.95 má hod-nota $\OML/zplm/m/it/10.95 ![]$ \T1/ppl/m/n/10.95 klad
+-nou hod-notu. Po-kud se bod $\OML/zplm/m/it/10.95 q$ \T1/ppl/m/n/10.95 na-cház
+í vpravo od p°ímky
  []
 
 
@@ -199,37 +198,39 @@ File: images/vstup.png Graphic file (type png)
 <use images/vstup.png>
 Package pdftex.def Info: images/vstup.png  used on input line 252.
 (pdftex.def)             Requested size: 62.03159pt x 91.54178pt.
-<images/aplikace_klik_analyze.png, id=28, 787.14075pt x 558.28575pt>
-File: images/aplikace_klik_analyze.png Graphic file (type png)
-<use images/aplikace_klik_analyze.png>
-Package pdftex.def Info: images/aplikace_klik_analyze.png  used on input line 2
-69.
-(pdftex.def)             Requested size: 314.85072pt x 223.31033pt.
 [5
 
  <./images/vstup.png>]
+<images/aplikace_klik_analyze.png, id=32, 787.14075pt x 558.28575pt>
+File: images/aplikace_klik_analyze.png Graphic file (type png)
+<use images/aplikace_klik_analyze.png>
+Package pdftex.def Info: images/aplikace_klik_analyze.png  used on input line 2
+71.
+(pdftex.def)             Requested size: 314.85072pt x 223.31033pt.
 <images/aplikace_analyze_outside.png, id=33, 786.5385pt x 557.08125pt>
 File: images/aplikace_analyze_outside.png Graphic file (type png)
 <use images/aplikace_analyze_outside.png>
 Package pdftex.def Info: images/aplikace_analyze_outside.png  used on input lin
-e 283.
+e 285.
 (pdftex.def)             Requested size: 314.60983pt x 222.82855pt.
 <images/aplikace_analyze_inside.png, id=34, 787.14075pt x 557.08125pt>
 File: images/aplikace_analyze_inside.png Graphic file (type png)
 <use images/aplikace_analyze_inside.png>
 Package pdftex.def Info: images/aplikace_analyze_inside.png  used on input line
- 289.
+ 291.
 (pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
- [6 <./images/aplikace_klik_analyze.png>] [7 <./images/aplikace_analyze_outside
-.png> <./images/aplikace_analyze_inside.png>]
+ [6
+
+ <./images/aplikace_klik_analyze.png>] [7 <./images/aplikace_analyze_outside.pn
+g> <./images/aplikace_analyze_inside.png>]
 <images/aplikace_uvodni_okno.png, id=45, 787.14075pt x 557.08125pt>
 File: images/aplikace_uvodni_okno.png Graphic file (type png)
 <use images/aplikace_uvodni_okno.png>
 Package pdftex.def Info: images/aplikace_uvodni_okno.png  used on input line 30
-0.
+1.
 (pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
 
-Overfull \hbox (2.51743pt too wide) in paragraph at lines 317--318
+Overfull \hbox (2.51743pt too wide) in paragraph at lines 318--319
 []\T1/ppl/m/n/10.95 double get2LinesAngle(QPoint &p1, QPoint &p2, QPoint &p3, Q
 Point
  []
@@ -237,48 +238,42 @@ Point
 [8
 
  <./images/aplikace_uvodni_okno.png>]
-Overfull \hbox (2.5062pt too wide) in paragraph at lines 334--336
+Overfull \hbox (7.14873pt too wide) in paragraph at lines 332--334
+\T1/ppl/m/n/10.95 jsou body ur-£u-jící li-nie, tzn. vr-choly po-ly-gonu. Ná-vra
+-to-vou hod-no-tou funkce
+ []
+
+
+Overfull \hbox (2.5062pt too wide) in paragraph at lines 335--337
 \T1/ppl/m/n/10.95 drobn¥ vy-sv¥t-lena v ka-pi-tole 3. Vstup-ními ar-gu-menty js
 ou sou-°ad-nice bodu
  []
 
 
-Overfull \hbox (2.91043pt too wide) in paragraph at lines 334--336
-\T1/ppl/m/n/10.95 Q (jako QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-
-n¥ný prvky QPoint).
- []
-
-
-Overfull \hbox (0.75357pt too wide) in paragraph at lines 343--345
-\T1/ppl/m/n/10.95 vy-sv¥t-lena v ka-pi-tole 3. vstup-ními ar-gu-menty jsou sou-
-°ad-nice bodu Q (jako
- []
-
-
-Overfull \hbox (3.73209pt too wide) in paragraph at lines 343--345
+Overfull \hbox (3.73209pt too wide) in paragraph at lines 344--346
 \T1/ppl/m/n/10.95 QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-n¥ný prv
 ky QPoint). Funkce
  []
 
 [9]
-Overfull \hbox (5.61566pt too wide) in paragraph at lines 374--376
+Overfull \hbox (5.61566pt too wide) in paragraph at lines 375--377
 \T1/ppl/m/n/10.95 Funkce na-sta-vuje gra-fické atri-buty vy-kres-lo-va-ných ob-
 jekt· a kreslí na plátno
  []
 
 
-Overfull \hbox (0.77649pt too wide) in paragraph at lines 380--382
+Overfull \hbox (0.77649pt too wide) in paragraph at lines 381--383
 \T1/ppl/m/n/10.95 Funkce smaºe ve²-keré ob-jekty, jeº jsou vy-kres-leny na ca-n
 -vasu, funkce nemá
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
 
  []
 
@@ -299,7 +294,7 @@ s/cm/cmr10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
 ts/type1/public/mathpazo/fplmri.pfb><D:/Programy/MikTex/fonts/type1/urw/palatin
 o/uplb8a.pfb><D:/Programy/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><D:/Progra
 my/MikTex/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on U1_GVB.pdf (13 pages, 172542 bytes).
+Output written on U1_GVB.pdf (13 pages, 172710 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

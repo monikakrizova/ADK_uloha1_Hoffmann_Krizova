@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {4.1}Winding Number algoritmus}{3}%
 \contentsline {subsection}{\numberline {4.2}Ray Crossing algoritmus}{4}%
 \contentsline {section}{\numberline {5}Vstupní data}{5}%
-\contentsline {section}{\numberline {6}Výstupní data}{5}%
+\contentsline {section}{\numberline {6}Výstupní data}{6}%
 \contentsline {section}{\numberline {7}Printscreen vytvořené aplikace}{8}%
 \contentsline {section}{\numberline {8}Dokumentace}{8}%
 \contentsline {subsection}{\numberline {8.1}Třída Algorithms}{8}%

@@ -133,7 +133,7 @@ t=\vec{u_{i}}\times\vec{v_{i}}
 \label{WN:t}
 \end{equation}
 
-Nachází-li se bod vlevo od $q$ vlevo od přímky $(p_{i}, p_{i+1})$, pak má hodnota $\omega_{i}$ kladnou hodnotu. Pokud se bod $q$ nachází vpravo od přímky $(p_{i}, p_{i+1})$, pak má hodnota $\omega_{i}$ zápornou hodnotu.\\
+Nachází-li se bod $q$ vlevo od přímky $h$ procházející body $p_{i}$ a $p_{i+1}$, pak má hodnota $\omega_{i}$ kladnou hodnotu. Pokud se bod $q$ nachází vpravo od přímky $(p_{i}, p_{i+1})$, pak má hodnota $\omega_{i}$ zápornou hodnotu.\\
 
 Pokud se rovnice (\ref{WN:omega_sum}) rovná $1$, nachází se bod $q$ v polygonu ${P_{j}}$. Pokud je výsledek nulový, pozice bodu se nachází mimo polygon ${P_{j}}$.  Uvedené vztahy popisuje rovnice (\ref{WN:omega_WN}).
 
@@ -148,7 +148,7 @@ Pokud se rovnice (\ref{WN:omega_sum}) rovná $1$, nachází se bod $q$ v polygon
 \subsection{Ray Crossing algoritmus}
 \textit {Ray Crossing} algoritmus je založen na docela jiném principu. 
 
-Máme-li bod $q$ a polygon ${P_{j}}$ tvořený body ${p_{i}}$ a  vedeme-li polopřímku $r$ z bodu $q$ libovolným směrem, určuje se poloha bodu $q$ na základě počtu průsečíků $q$ polopřímky $r$ s oblastí ${P_{j}}$.
+Máme-li bod $q$ a polygon ${P_{j}}$ tvořený body ${p_{i}}$ a  vedeme-li polopřímku $r$ z bodu $q$ libovolným směrem, určuje se poloha bodu $q$ na základě počtu průsečíků $k$ polopřímky $r$ s oblastí ${P_{j}}$.
 
 \begin{equation}
 k(r, P) \% 2= \left\{\begin{array}{l}
@@ -158,7 +158,7 @@ k(r, P) \% 2= \left\{\begin{array}{l}
 \label{RC:k}
 \end{equation}
 
-V tomto tvaru je sice algoritmus rychlejší než Winding Number algoritmus, nicméně je nutné zabývat se problémem singularity, kdy bod leží na hraně polygonu či přímo inciduje s vrcholem ,nebo polopřímka $r$ prochází vrcholem ${p_{i}}$ polygonu ${P_{j}}$.
+V tomto tvaru je sice algoritmus rychlejší než Winding Number algoritmus, nicméně je nutné zabývat se problémem singularity, kdy bod leží na hraně polygonu či přímo inciduje s vrcholem, nebo polopřímka $r$ prochází vrcholem ${p_{i}}$ polygonu ${P_{j}}$.
 
 Problém singularity bude více rozebrán v následující kapitole.
 
@@ -183,7 +183,7 @@ Pro odstranění této singularity se zavádí varianta Ray Crossing algoritmu s
 
 Lokální souřadnicová soustava je popsána následovně:
 \begin{itemize}
-\item Počátek v bodě q
+\item počátek v bodě q
 \item osa $x^{\prime}$ rovnoběžná s osou x
 \item osa $y^{\prime}$ rovnoběžná s osou y
 \end{itemize}
@@ -199,7 +199,7 @@ x_{i-1}^{\prime}=x_{i-1}-x_{q}\, \nonumber \\
 y_{i-1}^{\prime}=y_{i-1}-y_{q} \,
 \end{eqnarray}
 
-Zdali existuje průsečík přímky $p$ a paprsku $r$ zjistíme následující podmínkou
+Zdali existuje průsečík přímky $h$ a paprsku $r$ zjistíme následující podmínkou
 
 \begin{equation}
 \left(y_{i}^{\prime}>0\right) \wedge\left(y_{i-1}^{\prime}<=0\right) \vee\left(y_{i-1}^{\prime}>0\right) \wedge\left(y_{i}^{\prime}<=0\right)
@@ -256,6 +256,8 @@ Vrcholy polygonů jsou načítány postupně řádek po řádku, přičemž mus�
 
 Souřadnice bodu $q$ jsou získávány interaktivně odečtením souřadnic kurzoru myši.   
 
+\clearpage
+
 %----------------------------------------------------------------------------------------
 %	VÝSTUPNÍ DATA
 %----------------------------------------------------------------------------------------
@@ -291,7 +293,6 @@ Výsledek dotazu může mít 3 různé hodnoty:
 	\label{fig:app_inside}
 \end{figure} 
 
-
 \clearpage
 
 \section{Printscreen vytvořené aplikace}
@@ -320,7 +321,7 @@ Třída Algorithms obsahuje 4 funkce :
 \end{itemize}
 
 \paragraph{int getPointLinePosition(QPoint \&a, QPoint \&p1, QPoint \&p2);}\mbox{}\\
-Analyzuje vzájemnou polohu mezi bodem a linií polygonu, resp. v jaké polorovině vůči linii se bod nachází. Vstupními argumenty funkce jsou souřadnice určovaného bodu (jako QPoint) a souřadnice 2 bodů určujících polohu linie (vrcholy polygonu taktéž jako QPoint). Funkce vrací vždy buď hodnotu 1, 0 nebo -1 dle následujících pravidel:
+Analyzuje vzájemnou polohu mezi bodem a linií polygonu, resp. v jaké polorovině vůči linii se bod nachází. Vstupními argumenty funkce jsou souřadnice určovaného bodu (jako QPoint) a souřadnice 2 bodů určujících polohu linie (vrcholy polygonu taktéž jako QPoint). Funkce vrací vždy hodnotu 1, 0 nebo -1 dle následujících pravidel:
 
 \begin{itemize}
 \item 0 v případě, že bod leží v pravé polorovině,
@@ -329,10 +330,10 @@ Analyzuje vzájemnou polohu mezi bodem a linií polygonu, resp. v jaké polorovi
 \end{itemize}
 
 \paragraph{double get2LinesAngle(QPoint \&p1, QPoint \&p2, QPoint \&p3, QPoint \&p4);}\mbox{}\\
-Počítá úhel mezi dvěma liniemi pomocí vztahu \ref{WN:omega_i}, vstupními argumenty jsou body určující linie -  tedy vrcholy polygonu). Návratovou hodnotou funkce je double – desetinné číslo s velikostí úhlu mezi těmito přímkami.  
+Počítá úhel mezi dvěma liniemi pomocí vztahu \ref{WN:omega_i}. Vstupními argumenty jsou body určující linie, tzn. vrcholy polygonu. Návratovou hodnotou funkce je double – desetinné číslo s velikostí úhlu mezi těmito přímkami.  
 
 \paragraph{int getPositionWinding(QPoint \&q, std::vector<QPoint> \&pol);}\mbox{}\\
-Funkce analyzuje polohu bodu metodou Winding number, jež byla podrobně vysvětlena v kapitole 3.  Vstupními argumenty jsou souřadnice bodu Q (jako QPoint) a vektor vrcholů polygonu (vektor naplněný prvky QPoint). Funkce vrací integer, jež může nabývat 3 hodnot:
+Funkce analyzuje polohu bodu metodou Winding Number, jež byla podrobně vysvětlena v kapitole 3.  Vstupními argumenty jsou souřadnice bodu $q$ (jako QPoint) a vektor vrcholů polygonu (vektor naplněný prvky QPoint). Funkce vrací integer, jež může nabývat 3 hodnot:
 
 \begin{itemize}
 \item 1, leží-li analyzovaný bod uvnitř polygonu
@@ -341,7 +342,7 @@ Funkce analyzuje polohu bodu metodou Winding number, jež byla podrobně vysvět
 \end{itemize}
 
 \paragraph{int getPositionRayCrossing(QPoint \&q, std::vector<QPoint> \&pol);}\mbox{}\\
-Funkce analyzuje polohu bodu metodou Ray Crossing, jež byla podrobně vysvětlena v kapitole 3. vstupními argumenty jsou souřadnice bodu Q (jako QPoint) a vektor vrcholů polygonu (vektor naplněný prvky QPoint). Funkce vrací, stejně jako funkce předchozí, celé číslo, jež může nabývat následujících hodnot:
+Funkce analyzuje polohu bodu metodou Ray Crossing, jež byla podrobně vysvětlena v kapitole 3. vstupními argumenty jsou souřadnice bodu $q$ (jako QPoint) a vektor vrcholů polygonu (vektor naplněný prvky QPoint). Funkce vrací, stejně jako funkce předchozí, celé číslo, jež může nabývat následujících hodnot:
 
 \begin{itemize}
 \item 1, pokud leží analyzovaný bod uvnitř polygonu
@@ -375,13 +376,13 @@ a následující proměnné:
 Funkce nastavuje grafické atributy vykreslovaných objektů a kreslí na plátno vyhodnocovaný bod a zadané polygony a znázorňuje polygon incidující s bodem. 
 
 \paragraph{void mousePressEvent(QMouseEvent *event);}\mbox{}\\
-Metoda získává souřadnice myši a ukládá je do proměnné QPoint q, tedy jako souřadnice analyzovaného bodu Q.
+Metoda získává souřadnice myši a ukládá je do proměnné QPoint q, tedy jako souřadnice analyzovaného bodu $q$.
 
 \paragraph{void clear();}\mbox{}\\
 Funkce smaže veškeré objekty, jež jsou vykresleny na canvasu, funkce nemá vstupní argumenty. 
 
 \paragraph{QPoint getPoint()\{return q;\}}\mbox{}\\
-Funkce vrací souřadnice bodu Q, návratový typ funkce je QPoint, funkce nemá vstupní argumenty.
+Funkce vrací souřadnice bodu $q$, návratový typ funkce je QPoint, funkce nemá vstupní argumenty.
 
 \paragraph{std::vector<QPolygon> getPolygon()\{return polygons;\}}\mbox{}\\
 Funkce vrací vektor polygonů načtených z textového souboru – návratový typ je std::vector<QPolygon>, funkce nemá vstupní argumenty.
@@ -390,7 +391,7 @@ Funkce vrací vektor polygonů načtených z textového souboru – návratový 
 Funkce ukládá identifikátor polygonu obsahujícího analyzovaný bod, pomocí identifikátoru se tento polygon následně ve funkci paintEvent() zvýrazní. Vstupním argumentem je int result, jež stanovuje polohu bodu vůči linii (má hodnoty 0,1,-1,dle definice výše). 
 
 \paragraph{void loadData(QString \&file\_name);}\mbox{}\\
-Funkce načítá data z textového souboru a ukládá je do vektoru QPolygon. Vstupní argumentem je cesta k souboru, jež chceme načíst do aplikace.   
+Funkce načítá data z textového souboru a ukládá je do vektoru QPolygon. Vstupní argumentem je cesta k souboru, jejž chceme načíst do aplikace.   
 
 \subsection{Třída Widget}
 Třída Widget obsahuje 3 metody:
