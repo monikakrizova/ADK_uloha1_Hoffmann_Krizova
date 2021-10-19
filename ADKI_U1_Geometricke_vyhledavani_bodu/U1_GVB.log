@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  19 OCT 2021 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  19 OCT 2021 14:56
 entering extended mode
 **./U1_GVB.tex
 (U1_GVB.tex
@@ -198,83 +198,110 @@ u, p°i-£emº musí
 File: images/vstup.png Graphic file (type png)
 <use images/vstup.png>
 Package pdftex.def Info: images/vstup.png  used on input line 252.
-(pdftex.def)             Requested size: 93.04738pt x 137.31267pt.
+(pdftex.def)             Requested size: 62.03159pt x 91.54178pt.
+<images/aplikace_klik_analyze.png, id=28, 787.14075pt x 558.28575pt>
+File: images/aplikace_klik_analyze.png Graphic file (type png)
+<use images/aplikace_klik_analyze.png>
+Package pdftex.def Info: images/aplikace_klik_analyze.png  used on input line 2
+69.
+(pdftex.def)             Requested size: 314.85072pt x 223.31033pt.
 [5
 
- <./images/vstup.png>] [6]
-Overfull \hbox (2.51743pt too wide) in paragraph at lines 295--296
+ <./images/vstup.png>]
+<images/aplikace_analyze_outside.png, id=33, 786.5385pt x 557.08125pt>
+File: images/aplikace_analyze_outside.png Graphic file (type png)
+<use images/aplikace_analyze_outside.png>
+Package pdftex.def Info: images/aplikace_analyze_outside.png  used on input lin
+e 283.
+(pdftex.def)             Requested size: 314.60983pt x 222.82855pt.
+<images/aplikace_analyze_inside.png, id=34, 787.14075pt x 557.08125pt>
+File: images/aplikace_analyze_inside.png Graphic file (type png)
+<use images/aplikace_analyze_inside.png>
+Package pdftex.def Info: images/aplikace_analyze_inside.png  used on input line
+ 289.
+(pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
+ [6 <./images/aplikace_klik_analyze.png>] [7 <./images/aplikace_analyze_outside
+.png> <./images/aplikace_analyze_inside.png>]
+<images/aplikace_uvodni_okno.png, id=45, 787.14075pt x 557.08125pt>
+File: images/aplikace_uvodni_okno.png Graphic file (type png)
+<use images/aplikace_uvodni_okno.png>
+Package pdftex.def Info: images/aplikace_uvodni_okno.png  used on input line 30
+0.
+(pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
+
+Overfull \hbox (2.51743pt too wide) in paragraph at lines 317--318
 []\T1/ppl/m/n/10.95 double get2LinesAngle(QPoint &p1, QPoint &p2, QPoint &p3, Q
 Point
  []
 
+[8
 
-Overfull \hbox (2.5062pt too wide) in paragraph at lines 312--314
+ <./images/aplikace_uvodni_okno.png>]
+Overfull \hbox (2.5062pt too wide) in paragraph at lines 334--336
 \T1/ppl/m/n/10.95 drobn¥ vy-sv¥t-lena v ka-pi-tole 3. Vstup-ními ar-gu-menty js
 ou sou-°ad-nice bodu
  []
 
 
-Overfull \hbox (2.91043pt too wide) in paragraph at lines 312--314
+Overfull \hbox (2.91043pt too wide) in paragraph at lines 334--336
 \T1/ppl/m/n/10.95 Q (jako QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-
 n¥ný prvky QPoint).
  []
 
-[7
 
-]
-Overfull \hbox (0.75357pt too wide) in paragraph at lines 321--323
+Overfull \hbox (0.75357pt too wide) in paragraph at lines 343--345
 \T1/ppl/m/n/10.95 vy-sv¥t-lena v ka-pi-tole 3. vstup-ními ar-gu-menty jsou sou-
 °ad-nice bodu Q (jako
  []
 
 
-Overfull \hbox (3.73209pt too wide) in paragraph at lines 321--323
+Overfull \hbox (3.73209pt too wide) in paragraph at lines 343--345
 \T1/ppl/m/n/10.95 QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-n¥ný prv
 ky QPoint). Funkce
  []
 
-[8]
-Overfull \hbox (5.61566pt too wide) in paragraph at lines 352--354
+[9]
+Overfull \hbox (5.61566pt too wide) in paragraph at lines 374--376
 \T1/ppl/m/n/10.95 Funkce na-sta-vuje gra-fické atri-buty vy-kres-lo-va-ných ob-
 jekt· a kreslí na plátno
  []
 
 
-Overfull \hbox (0.77649pt too wide) in paragraph at lines 358--360
+Overfull \hbox (0.77649pt too wide) in paragraph at lines 380--382
 \T1/ppl/m/n/10.95 Funkce smaºe ve²-keré ob-jekty, jeº jsou vy-kres-leny na ca-n
 -vasu, funkce nemá
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
-[10] [11] (U1_GVB.aux) ) 
+[12] (U1_GVB.aux) ) 
 Here is how much of TeX's memory you used:
- 2363 strings out of 481556
- 31496 string characters out of 2927850
- 275663 words of memory out of 3000000
- 17561 multiletter control sequences out of 15000+200000
+ 2391 strings out of 481556
+ 32403 string characters out of 2927850
+ 275695 words of memory out of 3000000
+ 17585 multiletter control sequences out of 15000+200000
  567802 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,13n,27p,443b,210s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Programy/MikTex/fonts/enc/dvips/base/8r.enc}<D:/Pro
-gramy/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/MikTex/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programy/MikTex/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><D:/Programy/MikTex/fonts/type1/public/mathpazo/fplmr.pfb><D:/Programy/MikTe
-x/fonts/type1/public/mathpazo/fplmri.pfb><D:/Programy/MikTex/fonts/type1/urw/pa
-latino/uplb8a.pfb><D:/Programy/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><D:/P
-rogramy/MikTex/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on U1_GVB.pdf (12 pages, 129939 bytes).
+ 30i,13n,27p,443b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Programy/MikTex/fonts/enc/dvips/base/8r.enc}<D:/Programy
+/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/MikTex/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
+:/Programy/MikTex/fonts/type1/public/mathpazo/fplmr.pfb><D:/Programy/MikTex/fon
+ts/type1/public/mathpazo/fplmri.pfb><D:/Programy/MikTex/fonts/type1/urw/palatin
+o/uplb8a.pfb><D:/Programy/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><D:/Progra
+my/MikTex/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on U1_GVB.pdf (13 pages, 172542 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

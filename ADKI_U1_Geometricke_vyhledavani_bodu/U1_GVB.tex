@@ -90,7 +90,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Zadání}
-Navrhněte!!!!!!!!!!!!!!!!!!!!!!!! aplikaci s grafickým rozhraním, která vyhledá a vyznačí polygon obsahující zadaný bod.
+Navrhněte aplikaci s grafickým rozhraním, která vyhledá a vyznačí polygon obsahující zadaný bod.
 
 Využijte existující geografická data nebo si vytvořte vlastní soubor s nekonvexními polygony. Data načítejte z textového souboru, ve kterém jsou polygony zaznamenány ve formě špagetového modelu. 
 
@@ -249,7 +249,7 @@ Vrcholy polygonů jsou načítány postupně řádek po řádku, přičemž mus�
 
 \begin{figure}[htbh]
 	\centering
-	\includegraphics[scale=1.5]{images/vstup.png} 
+	\includegraphics[scale=1]{images/vstup.png} 
 	\caption{Špagetový model vstupního souboru}
 	\label{fig:vstup.}
 \end{figure} 
@@ -262,9 +262,14 @@ Souřadnice bodu $q$ jsou získávány interaktivně odečtením souřadnic kurz
 
 \section{Výstupní data}
 
-Po načtení souboru s polygonovou mapou, přidání bodu $q$ a stisknutí tlačítka Analyze se v místě vyznačeném na Obr.  XX vytiskne výsledek analýzy polohy bodu. 
+Po načtení souboru s polygonovou mapou, přidání bodu $q$ a stisknutí tlačítka Analyze se v místě vyznačeném na obrázku \ref{fig:app_analyze} vytiskne výsledek analýzy polohy bodu. 
 
-obrazek
+\begin{figure}[htbh]
+	\centering
+	\includegraphics[scale=0.4]{images/aplikace_klik_analyze.png} 
+	\caption{Aplikace s načteným polygonem}
+	\label{fig:app_analyze}
+\end{figure} 
 
 Výsledek dotazu může mít 3 různé hodnoty:
 
@@ -273,12 +278,29 @@ Výsledek dotazu může mít 3 různé hodnoty:
 \item je-li bod uvnitř polygonu, vypíše se zpráva „Inside“ a polygon obsahující zadaný bod se graficky zvýrazní,
 \item je-li bod na hranici polygonu, vypíše se „Point is on the line“ a graficky se zvýrazní polygon, na jehož linii bod leží.      
 \end{itemize}
+\begin{figure}[htbh]
+	\centering
+	\includegraphics[scale=0.4]{images/aplikace_analyze_outside.png} 
+	\caption{Bod vně polygonu}
+	\label{fig:app_outside}
+\end{figure} 
+\begin{figure}[htbh]
+	\centering
+	\includegraphics[scale=0.4]{images/aplikace_analyze_inside.png} 
+	\caption{Bod uvnitř polygonu}
+	\label{fig:app_inside}
+\end{figure} 
 
-obrazek
+
 \clearpage
 
 \section{Printscreen vytvořené aplikace}
-obrazky
+\begin{figure}[htbh]
+	\centering
+	\includegraphics[scale=0.4]{images/aplikace_uvodni_okno.png} 
+	\caption{Úvodní okno aplikace}
+	\label{fig:uvodni_okno}
+\end{figure} 
 
 %----------------------------------------------------------------------------------------
 %	DOKUMENTACE
