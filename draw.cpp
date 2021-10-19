@@ -8,7 +8,6 @@ Draw::Draw(QWidget *parent) : QWidget(parent)
 {
     q.setX(-100);
     q.setY(-100);
-    add_vertex = true;
 }
 
 

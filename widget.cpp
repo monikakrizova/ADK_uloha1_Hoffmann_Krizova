@@ -81,8 +81,8 @@ void Widget::on_pushButtonAnalyze_clicked()
 
     //Fill polygon including point
     ui->Canvas->fillPolygon(pol_position);
-
 }
+
 
 void Widget::on_pushButtonLoad_clicked()
 {
