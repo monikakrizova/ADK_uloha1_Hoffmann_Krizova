@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  18 OCT 2021 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  19 OCT 2021 13:23
 entering extended mode
 **./U1_GVB.tex
 (U1_GVB.tex
@@ -135,62 +135,146 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ) [1
 
 {C:/Users/Marek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (U1_GVB.toc
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 5
+.
 
-Overfull \hbox (5.58472pt too wide) in paragraph at lines 5--5
- [] []\T1/ppl/b/n/10.95 Problematické si-tu-ace a je-jich roz-bor (tj. sim-plex
-y) + o²et-°ení t¥chto 
- []
-
+(D:\Programy\MikTex\tex/latex/psnfss\ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+5.
+
+(D:\Programy\MikTex\tex/latex/psnfss\omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+5.
+
+(D:\Programy\MikTex\tex/latex/psnfss\omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+5.
+
+(D:\Programy\MikTex\tex/latex/psnfss\omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+5.
+
+(D:\Programy\MikTex\tex/latex/psnfss\ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+))
 \tf@toc=\write3
 \openout3 = `U1_GVB.toc'.
 
- [1]
-<images/appka.png, id=10, 790.75426pt x 559.49025pt>
-File: images/appka.png Graphic file (type png)
-<use images/appka.png>
-Package pdftex.def Info: images/appka.png  used on input line 92.
-(pdftex.def)             Requested size: 434.91618pt x 307.72058pt.
+ [1] [2
 
-Overfull \hbox (74.91618pt too wide) in paragraph at lines 92--93
- [][] 
+]
+Overfull \hbox (14.67332pt too wide) in paragraph at lines 136--137
+\T1/ppl/m/n/10.95 nota $\OML/zplm/m/it/10.95 ![]$ \T1/ppl/m/n/10.95 klad-nou ho
+d-notu. Po-kud se bod $\OML/zplm/m/it/10.95 q$ \T1/ppl/m/n/10.95 na-chází vprav
+o od p°ímky $\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 p[]\OT1/ppl/m/n/10.95 , 
+\OML/zplm/m/it/10.95 p[]\OT1/zplm/m/n/10.95 )$\T1/ppl/m/n/10.95 ,
  []
 
-[2
 
- <./images/appka.png>] [3
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
-] [4
+ []
 
-] [5
+[3]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
+86.
+ (D:\Programy\MikTex\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [4]
+Overfull \hbox (2.53426pt too wide) in paragraph at lines 241--242
+[]\T1/ppl/m/n/10.95 Vrcholy po-ly-gon· jsou na-£í-tány po-stupn¥ °á-dek po °ádk
+u, p°i-£emº musí
+ []
 
-] [6
+<images/vstup.png, id=26, 62.03175pt x 91.542pt>
+File: images/vstup.png Graphic file (type png)
+<use images/vstup.png>
+Package pdftex.def Info: images/vstup.png  used on input line 252.
+(pdftex.def)             Requested size: 93.04738pt x 137.31267pt.
+[5
 
-] [7
+ <./images/vstup.png>] [6]
+Overfull \hbox (2.51743pt too wide) in paragraph at lines 295--296
+[]\T1/ppl/m/n/10.95 double get2LinesAngle(QPoint &p1, QPoint &p2, QPoint &p3, Q
+Point
+ []
 
-] [8
 
-] [9
+Overfull \hbox (2.5062pt too wide) in paragraph at lines 312--314
+\T1/ppl/m/n/10.95 drobn¥ vy-sv¥t-lena v ka-pi-tole 3. Vstup-ními ar-gu-menty js
+ou sou-°ad-nice bodu
+ []
 
-] [10
 
-] [11
+Overfull \hbox (2.91043pt too wide) in paragraph at lines 312--314
+\T1/ppl/m/n/10.95 Q (jako QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-
+n¥ný prvky QPoint).
+ []
 
-] (U1_GVB.aux) ) 
+[7
+
+]
+Overfull \hbox (0.75357pt too wide) in paragraph at lines 321--323
+\T1/ppl/m/n/10.95 vy-sv¥t-lena v ka-pi-tole 3. vstup-ními ar-gu-menty jsou sou-
+°ad-nice bodu Q (jako
+ []
+
+
+Overfull \hbox (3.73209pt too wide) in paragraph at lines 321--323
+\T1/ppl/m/n/10.95 QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-n¥ný prv
+ky QPoint). Funkce
+ []
+
+[8]
+Overfull \hbox (5.61566pt too wide) in paragraph at lines 352--354
+\T1/ppl/m/n/10.95 Funkce na-sta-vuje gra-fické atri-buty vy-kres-lo-va-ných ob-
+jekt· a kreslí na plátno
+ []
+
+
+Overfull \hbox (0.77649pt too wide) in paragraph at lines 358--360
+\T1/ppl/m/n/10.95 Funkce smaºe ve²-keré ob-jekty, jeº jsou vy-kres-leny na ca-n
+-vasu, funkce nemá
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
+
+ []
+
+[10] [11] (U1_GVB.aux) ) 
 Here is how much of TeX's memory you used:
- 2221 strings out of 481556
- 29623 string characters out of 2927850
- 272614 words of memory out of 3000000
- 17464 multiletter control sequences out of 15000+200000
- 553178 words of font info for 48 fonts, out of 3000000 for 9000
+ 2363 strings out of 481556
+ 31496 string characters out of 2927850
+ 275663 words of memory out of 3000000
+ 17561 multiletter control sequences out of 15000+200000
+ 567802 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,27p,215b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Programy/MikTex/fonts/enc/dvips/base/8r.enc}<D:/Programy/Mi
-kTex/fonts/type1/urw/palatino/uplb8a.pfb><D:/Programy/MikTex/fonts/type1/urw/pa
-latino/uplr8a.pfb>
-Output written on U1_GVB.pdf (12 pages, 64787 bytes).
+ 30i,13n,27p,443b,210s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Programy/MikTex/fonts/enc/dvips/base/8r.enc}<D:/Pro
+gramy/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/MikTex/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programy/MikTex/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><D:/Programy/MikTex/fonts/type1/public/mathpazo/fplmr.pfb><D:/Programy/MikTe
+x/fonts/type1/public/mathpazo/fplmri.pfb><D:/Programy/MikTex/fonts/type1/urw/pa
+latino/uplb8a.pfb><D:/Programy/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><D:/P
+rogramy/MikTex/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on U1_GVB.pdf (12 pages, 129939 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

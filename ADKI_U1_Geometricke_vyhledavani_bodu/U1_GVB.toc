@@ -1,0 +1,31 @@
+\babel@toc {czech}{}
+\contentsline {section}{\numberline {1}Zadání}{2}%
+\contentsline {section}{\numberline {2}Popis problému}{2}%
+\contentsline {section}{\numberline {3}Popisy algoritmů}{2}%
+\contentsline {subsection}{\numberline {3.1}Winding Number algoritmus}{2}%
+\contentsline {subsection}{\numberline {3.2}Ray Crossing algoritmus}{3}%
+\contentsline {section}{\numberline {4}Problematické situace}{3}%
+\contentsline {subsection}{\numberline {4.1}Winding Number algoritmus}{3}%
+\contentsline {subsection}{\numberline {4.2}Ray Crossing algoritmus}{4}%
+\contentsline {section}{\numberline {5}Vstupní data}{5}%
+\contentsline {section}{\numberline {6}Výstupní data}{5}%
+\contentsline {section}{\numberline {7}Printscreen vytvořené aplikace}{7}%
+\contentsline {section}{\numberline {8}Dokumentace}{7}%
+\contentsline {subsection}{\numberline {8.1}Třída Algorithms}{7}%
+\contentsline {paragraph}{int getPointLinePosition(QPoint \&a, QPoint \&p1, QPoint \&p2);}{7}%
+\contentsline {paragraph}{double get2LinesAngle(QPoint \&p1, QPoint \&p2, QPoint \&p3, QPoint \&p4);}{7}%
+\contentsline {paragraph}{int getPositionWinding(QPoint \&q, std::vector<QPoint> \&pol);}{8}%
+\contentsline {paragraph}{int getPositionRayCrossing(QPoint \&q, std::vector<QPoint> \&pol);}{8}%
+\contentsline {subsection}{\numberline {8.2}Třída Draw}{8}%
+\contentsline {paragraph}{• void paintEvent(QPaintEvent *event);}{9}%
+\contentsline {paragraph}{void mousePressEvent(QMouseEvent *event);}{9}%
+\contentsline {paragraph}{void clear();}{9}%
+\contentsline {paragraph}{QPoint getPoint()\{return q;\}}{9}%
+\contentsline {paragraph}{std::vector<QPolygon> getPolygon()\{return polygons;\}}{9}%
+\contentsline {paragraph}{void fillPolygon(int result);}{9}%
+\contentsline {paragraph}{void loadData(QString \&file\_name);}{9}%
+\contentsline {subsection}{\numberline {8.3}Třída Widget}{10}%
+\contentsline {paragraph}{ void on\_pushButtonClear\_clicked();}{10}%
+\contentsline {paragraph}{ void on\_pushButtonAnalyze\_clicked();}{10}%
+\contentsline {paragraph}{void on\_pushButtonLoad\_clicked();}{10}%
+\contentsline {section}{\numberline {9}Závěr}{10}%
