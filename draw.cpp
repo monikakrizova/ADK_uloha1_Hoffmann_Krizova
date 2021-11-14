@@ -13,7 +13,7 @@ Draw::Draw(QWidget *parent) : QWidget(parent)
 
 void Draw::paintEvent(QPaintEvent *event)
 {
-    // Create graphic object
+    //Create graphic object
     QPainter painter(this);
     painter.begin(this);
     QPen pen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin);
@@ -29,7 +29,6 @@ void Draw::paintEvent(QPaintEvent *event)
     }
 
     //Draw polygon which contains the point
-
     //Set the painting style
     QBrush brush;
     brush.setColor(Qt::magenta);

@@ -53,7 +53,7 @@ void Widget::on_pushButtonAnalyze_clicked()
         }
 
         //Analyze point position
-        if(ui->comboBox->currentIndex())
+        if(ui->comboBox->currentIndex()==1)
             result = a.getPositionRayCrossing(q, vert);
         else
             result = a.getPositionWinding(q, vert);
@@ -67,16 +67,16 @@ void Widget::on_pushButtonAnalyze_clicked()
     }
     //Get position
     //Print results
-    if (result == 1)
+    if (result == 1) //Point inside polygon
         ui->label->setText("Inside");
-    else if (result == 0)
+    else if (result == 0)   //Point ooutside polygon
     {
         ui->label->setText("Outside");
         pol_position = -99;
     }
-    else if (result == -1)
+    else if (result == -1) //Point on a line
     {
-        ui->label->setText("Point is on the line");
+        ui->label->setText("Point is on a line");
     }
 
     //Fill polygon including point
