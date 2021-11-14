@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  19 OCT 2021 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  14 NOV 2021 15:13
 entering extended mode
 **./U1_GVB.tex
 (U1_GVB.tex
@@ -184,11 +184,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
 [3]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-86.
+88.
  (D:\Programy\MikTex\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [4]
-Overfull \hbox (2.53426pt too wide) in paragraph at lines 241--242
+Overfull \hbox (2.53426pt too wide) in paragraph at lines 243--244
 []\T1/ppl/m/n/10.95 Vrcholy po-ly-gon· jsou na-£í-tány po-stupn¥ °á-dek po °ádk
 u, p°i-£emº musí
  []
@@ -196,7 +196,7 @@ u, p°i-£emº musí
 <images/vstup.png, id=26, 62.03175pt x 91.542pt>
 File: images/vstup.png Graphic file (type png)
 <use images/vstup.png>
-Package pdftex.def Info: images/vstup.png  used on input line 252.
+Package pdftex.def Info: images/vstup.png  used on input line 254.
 (pdftex.def)             Requested size: 62.03159pt x 91.54178pt.
 [5
 
@@ -205,19 +205,19 @@ Package pdftex.def Info: images/vstup.png  used on input line 252.
 File: images/aplikace_klik_analyze.png Graphic file (type png)
 <use images/aplikace_klik_analyze.png>
 Package pdftex.def Info: images/aplikace_klik_analyze.png  used on input line 2
-71.
+73.
 (pdftex.def)             Requested size: 314.85072pt x 223.31033pt.
 <images/aplikace_analyze_outside.png, id=33, 786.5385pt x 557.08125pt>
 File: images/aplikace_analyze_outside.png Graphic file (type png)
 <use images/aplikace_analyze_outside.png>
 Package pdftex.def Info: images/aplikace_analyze_outside.png  used on input lin
-e 285.
+e 287.
 (pdftex.def)             Requested size: 314.60983pt x 222.82855pt.
 <images/aplikace_analyze_inside.png, id=34, 787.14075pt x 557.08125pt>
 File: images/aplikace_analyze_inside.png Graphic file (type png)
 <use images/aplikace_analyze_inside.png>
 Package pdftex.def Info: images/aplikace_analyze_inside.png  used on input line
- 291.
+ 293.
 (pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
  [6
 
@@ -227,10 +227,10 @@ g> <./images/aplikace_analyze_inside.png>]
 File: images/aplikace_uvodni_okno.png Graphic file (type png)
 <use images/aplikace_uvodni_okno.png>
 Package pdftex.def Info: images/aplikace_uvodni_okno.png  used on input line 30
-1.
+3.
 (pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
 
-Overfull \hbox (2.51743pt too wide) in paragraph at lines 318--319
+Overfull \hbox (2.51743pt too wide) in paragraph at lines 320--321
 []\T1/ppl/m/n/10.95 double get2LinesAngle(QPoint &p1, QPoint &p2, QPoint &p3, Q
 Point
  []
@@ -238,42 +238,42 @@ Point
 [8
 
  <./images/aplikace_uvodni_okno.png>]
-Overfull \hbox (7.14873pt too wide) in paragraph at lines 332--334
+Overfull \hbox (7.14873pt too wide) in paragraph at lines 334--336
 \T1/ppl/m/n/10.95 jsou body ur-£u-jící li-nie, tzn. vr-choly po-ly-gonu. Ná-vra
 -to-vou hod-no-tou funkce
  []
 
 
-Overfull \hbox (2.5062pt too wide) in paragraph at lines 335--337
+Overfull \hbox (2.5062pt too wide) in paragraph at lines 337--339
 \T1/ppl/m/n/10.95 drobn¥ vy-sv¥t-lena v ka-pi-tole 3. Vstup-ními ar-gu-menty js
 ou sou-°ad-nice bodu
  []
 
 
-Overfull \hbox (3.73209pt too wide) in paragraph at lines 344--346
+Overfull \hbox (3.73209pt too wide) in paragraph at lines 346--348
 \T1/ppl/m/n/10.95 QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-n¥ný prv
 ky QPoint). Funkce
  []
 
 [9]
-Overfull \hbox (5.61566pt too wide) in paragraph at lines 375--377
+Overfull \hbox (5.61566pt too wide) in paragraph at lines 377--379
 \T1/ppl/m/n/10.95 Funkce na-sta-vuje gra-fické atri-buty vy-kres-lo-va-ných ob-
 jekt· a kreslí na plátno
  []
 
 
-Overfull \hbox (0.77649pt too wide) in paragraph at lines 381--383
+Overfull \hbox (0.77649pt too wide) in paragraph at lines 383--385
 \T1/ppl/m/n/10.95 Funkce smaºe ve²-keré ob-jekty, jeº jsou vy-kres-leny na ca-n
 -vasu, funkce nemá
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
@@ -294,7 +294,7 @@ s/cm/cmr10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
 ts/type1/public/mathpazo/fplmri.pfb><D:/Programy/MikTex/fonts/type1/urw/palatin
 o/uplb8a.pfb><D:/Programy/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><D:/Progra
 my/MikTex/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on U1_GVB.pdf (13 pages, 172710 bytes).
+Output written on U1_GVB.pdf (13 pages, 173379 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

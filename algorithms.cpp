@@ -65,7 +65,7 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
     int n = pol.size();
 
     double omega_sum=0;
-    double eps = 1.0; //High number of epsylon to find a solution for point being on a line
+    double eps = 1.0e-10; //High number of epsylon to find a solution for point being on a line
 
     //Process all segments of polygon
     for (int i = 0; i<n; i++)

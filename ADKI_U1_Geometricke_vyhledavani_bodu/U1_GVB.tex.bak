@@ -145,6 +145,8 @@ Pokud se rovnice (\ref{WN:omega_sum}) rovná $1$, nachází se bod $q$ v polygon
 \label{WN:omega_WN}
 \end{equation}
 
+Bod $q$ leží na hraně $h$ polygonu ${P_{j}}$, pokud výsledek funkce \textit{getPointLine()} se rovná -1, tak jak popisuje kapitola 8.1 \textit{Algorithms}. Tato funkce určuje vzájemnou polohu bodu a přímky na základě vektorového součinu. Pokud je se vektorový součin rovná nule, leží bod na přímce.
+
 \subsection{Ray Crossing algoritmus}
 \textit {Ray Crossing} algoritmus je založen na docela jiném principu. 
 
@@ -391,7 +393,7 @@ Funkce vrací vektor polygonů načtených z textového souboru – návratový 
 Funkce ukládá identifikátor polygonu obsahujícího analyzovaný bod, pomocí identifikátoru se tento polygon následně ve funkci paintEvent() zvýrazní. Vstupním argumentem je int result, jež stanovuje polohu bodu vůči linii (má hodnoty 0,1,-1,dle definice výše). 
 
 \paragraph{void loadData(QString \&file\_name);}\mbox{}\\
-Funkce načítá data z textového souboru a ukládá je do vektoru QPolygon. Vstupní argumentem je cesta k souboru, jež chceme načíst do aplikace.   
+Funkce načítá data z textového souboru a ukládá je do vektoru QPolygon. Vstupní argumentem je cesta k souboru, jejž chceme načíst do aplikace.   
 
 \subsection{Třída Widget}
 Třída Widget obsahuje 3 metody:
