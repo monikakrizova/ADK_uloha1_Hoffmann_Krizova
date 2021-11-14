@@ -65,7 +65,7 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
     int n = pol.size();
 
     double omega_sum=0;
-    double eps = 1.0e-5;
+    double eps = 1.0; //High number of epsylon to find a solution for point being on a line
 
     //Process all segments of polygon
     for (int i = 0; i<n; i++)
@@ -76,20 +76,19 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
         //Point and line segment position
         int pos = getPointLinePosition(q, pol[i], pol[(i+1)%n]);
 
-        //Point in the left halfplane
-        if (pos==1)
+        if (pos==1) //Point in the left halfplane
             omega_sum += omega;
-        else if (pos == 0)
+        else if (pos == 0) //Point in the right halfplane
             omega_sum -= omega;
+        else
+            return -1;  //Point on a line
     }
 
     //Point position
     if (fabs(fabs(omega_sum) - 2*M_PI) < eps)    //Point inside polygon
         return 1;
-    else if (fabs(omega_sum) - 2*M_PI < eps)     //Point outside polygon
-        return 0;
-    else    //Point on the line
-        return -1;
+    else
+        return 0;   //Point outside polygon
 }
 
 int Algorithms::getPositionRayCrossing(QPoint &q, std::vector<QPoint> &pol)

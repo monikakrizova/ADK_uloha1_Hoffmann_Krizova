@@ -65,6 +65,7 @@ void Widget::on_pushButtonAnalyze_clicked()
             break;
         }
     }
+
     //Get position
     //Print results
     if (result == 1) //Point inside polygon
@@ -77,6 +78,7 @@ void Widget::on_pushButtonAnalyze_clicked()
     else if (result == -1) //Point on a line
     {
         ui->label->setText("Point is on a line");
+        pol_position = -99;
     }
 
     //Fill polygon including point
