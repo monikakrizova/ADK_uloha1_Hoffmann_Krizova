@@ -80,15 +80,21 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
             omega_sum += omega;
         else if (pos == 0) //Point in the right halfplane
             omega_sum -= omega;
-        else
-            return -1;  //Point on a line
     }
+
+    std::cout << "caueeees" << std::endl;
+
+    std::cout << "omega:" << omega_sum << std::endl;
 
     //Point position
     if (fabs(fabs(omega_sum) - 2*M_PI) < eps)    //Point inside polygon
         return 1;
-    else
-        return 0;   //Point outside polygon
+    else if (fabs(fabs(omega_sum) - M_PI) < eps) //Point on a line
+        return -1;
+    else    //Point outside polygon
+        return 0;
+
+
 }
 
 int Algorithms::getPositionRayCrossing(QPoint &q, std::vector<QPoint> &pol)

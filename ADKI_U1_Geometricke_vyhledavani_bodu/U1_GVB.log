@@ -1,100 +1,95 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.6)  15 NOV 2021 14:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.4)  17 NOV 2021 00:33
 entering extended mode
 **./U1_GVB.tex
 (U1_GVB.tex
-LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-08-27>
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(D:\Programy\MikTex\tex/latex/base\article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(D:\Programy\MikTex\tex/latex/base\size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count182
-\c@section=\count183
-\c@subsection=\count184
-\c@subsubsection=\count185
-\c@paragraph=\count186
-\c@subparagraph=\count187
-\c@figure=\count188
-\c@table=\count189
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen138
+\bibindent=\dimen134
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+(D:\Programy\MikTex\tex/latex/base\inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+(D:\Programy\MikTex\tex/latex/base\fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathpazo.sty
+(D:\Programy\MikTex\tex/latex/psnfss\mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/07/22 3.63 The Babel package
+(D:\Programy\MikTex\tex/generic/babel\babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2021/07/22 3.63 Babel common definitions
-\babel@savecnt=\count190
-\U@D=\dimen139
-\l@unhyphenated=\language79
-
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
-\bbl@readstream=\read2
+(D:\Programy\MikTex\tex/generic/babel\switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
-\bbl@dirlevel=\count191
-
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(D:\Programy\MikTex\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/babel-czech\czech.ldf
+(D:\Programy\MikTex\tex/latex/babel-czech\czech.ldf
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
-Package babel Info: Making " an active character on input line 172.
-\cs@wordlen=\count192
-Package babel Info: Making - an active character on input line 226.
-)) (C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
-y
-Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
+(D:\Programy\MikTex\tex/generic/babel\babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen135
+
+(D:\Programy\MikTex\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count176
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+Package babel Info: Making " an active character on input line 172.
+\cs@wordlen=\count177
+Package babel Info: Making - an active character on input line 226.
+))
+(D:\Programy\MikTex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(D:\Programy\MikTex\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(D:\Programy\MikTex\tex/latex/graphics\graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Programy\MikTex\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(D:\Programy\MikTex\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(D:\Programy\MikTex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen140
-\Gin@req@width=\dimen141
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 12
-.
- (C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count193
-\l__pdf_internal_box=\box50
+(D:\Programy\MikTex\tex/latex/l3backend\l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count178
+\l__pdf_internal_box=\box45
 ) (U1_GVB.aux)
 \openout1 = `U1_GVB.aux'.
 
@@ -112,77 +107,74 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-\big@size=\dimen142
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 12
+.
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count194
-\scratchdimen=\dimen143
-\scratchbox=\box51
-\nofMPsegments=\count195
-\nofMParguments=\count196
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count197
-\MPscratchDim=\dimen144
-\MPnumerator=\count198
-\makeMPintoPDFobject=\count199
-\everyMPtoPDFconversion=\toks20
+(D:\Programy\MikTex\tex/latex/psnfss\t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+\big@size=\dimen138
+
+(D:\Programy\MikTex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count179
+\scratchdimen=\dimen139
+\scratchbox=\box46
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen140
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks18
+) (D:\Programy\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+) [1
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) [1
-
-{C:/Users/monik/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(U1_GVB.toc
+{C:/Users/Marek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (U1_GVB.toc
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 6
 .
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
+(D:\Programy\MikTex\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
 6.
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
+(D:\Programy\MikTex\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
 6.
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
+(D:\Programy\MikTex\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
 6.
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
+(D:\Programy\MikTex\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
 6.
 
-(C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
+(D:\Programy\MikTex\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 ))
 \tf@toc=\write3
 \openout3 = `U1_GVB.toc'.
 
-
-[1]
+ [1]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
 05.
- (C:\Users\monik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+
+(D:\Programy\MikTex\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-[2
+) [2
 
 ]
 Overfull \hbox (2.93445pt too wide) in paragraph at lines 148--149
@@ -197,7 +189,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
  []
 
 [3] [4] [5]
-Overfull \hbox (2.53426pt too wide) in paragraph at lines 255--256
+Overfull \hbox (2.53426pt too wide) in paragraph at lines 254--255
 []\T1/ppl/m/n/10.95 Vrcholy po-ly-gon· jsou na-£í-tány po-stupn¥ °á-dek po °ádk
 u, p°i-£emº musí
  []
@@ -205,7 +197,7 @@ u, p°i-£emº musí
 <images/vstup.png, id=29, 62.03175pt x 91.542pt>
 File: images/vstup.png Graphic file (type png)
 <use images/vstup.png>
-Package pdftex.def Info: images/vstup.png  used on input line 266.
+Package pdftex.def Info: images/vstup.png  used on input line 265.
 (pdftex.def)             Requested size: 62.03159pt x 91.54178pt.
 [6
 
@@ -214,19 +206,19 @@ Package pdftex.def Info: images/vstup.png  used on input line 266.
 File: images/aplikace_klik_analyze.png Graphic file (type png)
 <use images/aplikace_klik_analyze.png>
 Package pdftex.def Info: images/aplikace_klik_analyze.png  used on input line 2
-85.
+84.
 (pdftex.def)             Requested size: 314.85072pt x 223.31033pt.
 <images/aplikace_analyze_outside.png, id=37, 786.5385pt x 557.08125pt>
 File: images/aplikace_analyze_outside.png Graphic file (type png)
 <use images/aplikace_analyze_outside.png>
 Package pdftex.def Info: images/aplikace_analyze_outside.png  used on input lin
-e 299.
+e 298.
 (pdftex.def)             Requested size: 314.60983pt x 222.82855pt.
 <images/aplikace_analyze_inside.png, id=38, 787.14075pt x 557.08125pt>
 File: images/aplikace_analyze_inside.png Graphic file (type png)
 <use images/aplikace_analyze_inside.png>
 Package pdftex.def Info: images/aplikace_analyze_inside.png  used on input line
- 305.
+ 304.
 (pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
  [7
 
@@ -236,10 +228,10 @@ g> <./images/aplikace_analyze_inside.png>]
 File: images/aplikace_uvodni_okno.png Graphic file (type png)
 <use images/aplikace_uvodni_okno.png>
 Package pdftex.def Info: images/aplikace_uvodni_okno.png  used on input line 31
-5.
+4.
 (pdftex.def)             Requested size: 314.85072pt x 222.82855pt.
 
-Overfull \hbox (2.51743pt too wide) in paragraph at lines 332--333
+Overfull \hbox (2.51743pt too wide) in paragraph at lines 331--332
 []\T1/ppl/m/n/10.95 double get2LinesAngle(QPoint &p1, QPoint &p2, QPoint &p3, Q
 Point
  []
@@ -247,68 +239,65 @@ Point
 [9
 
  <./images/aplikace_uvodni_okno.png>]
-Overfull \hbox (7.14873pt too wide) in paragraph at lines 346--348
+Overfull \hbox (7.14873pt too wide) in paragraph at lines 345--347
 \T1/ppl/m/n/10.95 jsou body ur-£u-jící li-nie, tzn. vr-choly po-ly-gonu. Ná-vra
 -to-vou hod-no-tou funkce
  []
 
 
-Overfull \hbox (2.5062pt too wide) in paragraph at lines 349--351
+Overfull \hbox (2.5062pt too wide) in paragraph at lines 348--350
 \T1/ppl/m/n/10.95 drobn¥ vy-sv¥t-lena v ka-pi-tole 3. Vstup-ními ar-gu-menty js
 ou sou-°ad-nice bodu
  []
 
 
-Overfull \hbox (3.73209pt too wide) in paragraph at lines 358--360
+Overfull \hbox (3.73209pt too wide) in paragraph at lines 357--359
 \T1/ppl/m/n/10.95 QPoint) a vek-tor vr-chol· po-ly-gonu (vek-tor na-pl-n¥ný prv
 ky QPoint). Funkce
  []
 
 [10]
-Overfull \hbox (5.61566pt too wide) in paragraph at lines 389--391
+Overfull \hbox (5.61566pt too wide) in paragraph at lines 388--390
 \T1/ppl/m/n/10.95 Funkce na-sta-vuje gra-fické atri-buty vy-kres-lo-va-ných ob-
 jekt· a kreslí na plátno
  []
 
 
-Overfull \hbox (0.77649pt too wide) in paragraph at lines 395--397
+Overfull \hbox (0.77649pt too wide) in paragraph at lines 394--396
 \T1/ppl/m/n/10.95 Funkce smaºe ve²-keré ob-jekty, jeº jsou vy-kres-leny na ca-n
 -vasu, funkce nemá
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 [13] (U1_GVB.aux) ) 
 Here is how much of TeX's memory you used:
- 2800 strings out of 478927
- 44127 string characters out of 2852535
- 352195 words of memory out of 3000000
- 20605 multiletter control sequences out of 15000+600000
- 438894 words of font info for 89 fonts, out of 8000000 for 9000
+ 2391 strings out of 481556
+ 32403 string characters out of 2927850
+ 276695 words of memory out of 3000000
+ 17585 multiletter control sequences out of 15000+200000
+ 567802 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,66p,453b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/monik/AppData/Local/Programs/MiKTeX/fonts/enc/dvip
-s/base/8r.enc}<C:/Users/monik/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmex10.pfb><C:/Users/monik/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Users/monik/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/monik/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/monik/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/monik/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/monik/App
-Data/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/monik/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/mon
-ik/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on U1_GVB.pdf (14 pages, 181525 bytes).
+ 30i,13n,27p,443b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Programy/MikTex/fonts/enc/dvips/base/8r.enc}<D:/Programy
+/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/MikTex/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><D:/Programy/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
+:/Programy/MikTex/fonts/type1/public/mathpazo/fplmr.pfb><D:/Programy/MikTex/fon
+ts/type1/public/mathpazo/fplmri.pfb><D:/Programy/MikTex/fonts/type1/urw/palatin
+o/uplb8a.pfb><D:/Programy/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><D:/Progra
+my/MikTex/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on U1_GVB.pdf (14 pages, 174735 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

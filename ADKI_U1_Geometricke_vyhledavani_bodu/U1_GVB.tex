@@ -147,17 +147,16 @@ t=\vec{u_{i}}\times\vec{v_{i}}
 
 Nachází-li se bod $q$ vlevo od přímky $h$ procházející body $p_{i}$ a $p_{i+1}$, pak má hodnota $\omega_{i}$ kladnou hodnotu. Pokud se bod $q$ nachází vpravo od přímky $(p_{i}, p_{i+1})$, pak má hodnota $\omega_{i}$ zápornou hodnotu.\\
 
-Pokud se rovnice (\ref{WN:omega_sum}) rovná $1$, nachází se bod $q$ v polygonu ${P_{j}}$. Pokud je výsledek nulový, pozice bodu se nachází mimo polygon ${P_{j}}$.  Uvedené vztahy popisuje rovnice (\ref{WN:omega_WN}).
+Pokud se rovnice (\ref{WN:omega_sum}) rovná $1$, nachází se bod $q$ v polygonu ${P_{j}}$. Pokud se výsledek rovná jedné polovině, nachází se bod $q$ na hraně $h$ polygonu ${P_{j}}$, a pokud je výsledek nulový, pozice bodu $q$ se nachází mimo polygon ${P_{j}}$.  Uvedené vztahy popisuje rovnice (\ref{WN:omega_WN}).
 
 \begin{equation}
 \Omega(q, P)=\left\{\begin{array}{l}
 1, q \in P \\
+\frac{1}{2}, q \in h \\
 0, q \notin P \\
 \end{array}\right.
 \label{WN:omega_WN}
 \end{equation}
-
-Bod $q$ leží na hraně $h$ polygonu ${P_{j}}$, pokud výsledek funkce \textit{getPointLine()} se rovná -1, jak popisuje kapitola 8.1 \textit{Algorithms}. Tato funkce určuje vzájemnou polohu bodu a přímky na základě vektorového součinu. Pokud se vektorový součin rovná nule, leží bod na přímce.
 
 \subsection{Ray Crossing algoritmus}
 \textit {Ray Crossing} algoritmus je založen na docela jiném principu. 
