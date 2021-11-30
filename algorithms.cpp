@@ -78,7 +78,7 @@ int Algorithms::getPositionWinding(QPoint &q, std::vector<QPoint> &pol)
 
         if (pos==1) //Point in the left halfplane
             omega_sum += omega;
-        else if (pos == 0) //Point in the right halfplane
+        else //Point in the right halfplane
             omega_sum -= omega;
     }
 
